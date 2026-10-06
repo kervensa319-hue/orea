@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fedoue Product — Beauté naturelle · Cap-Haïtien</title>
+<meta name="description" content="Fedoue Product — Soins bio visage, maquillage végan, huiles capillaires. Fabriqué à Cap-Haïtien, Haïti. Commande via WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Palette chaleureuse & naturelle */
+  --cream:#FAF6F0; --sand:#F1E8DC; --terracotta:#C67B5C; --terracotta-dark:#A85F42;
+  --sage:#8A9A7B; --sage-dark:#6B7A5C; --charcoal:#2E2A26; --brown:#5A4A3F;
+  --gold:#C9A961; --ink:#2E2A26; --muted:#8B7F73; --line:#E8DFD3;
+  --white:#fff; --green:#25D366; --red:#C0392B;
+  --radius:22px; --radius-sm:14px; --radius-lg:32px;
+  --shadow:0 8px 32px rgba(90,74,63,.08);
+  --shadow-lg:0 24px 64px rgba(90,74,63,.16);
+  --tr:.4s cubic-bezier(.4,0,.2,1);
+  --tr-fast:.25s cubic-bezier(.4,0,.2,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:16px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.serif{font-family:'Fraunces',serif;font-weight:600;line-height:1.15;letter-spacing:-.01em}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,textarea,select{font-family:inherit;font-size:1rem;color:inherit}
+.container{width:min(1280px,92%);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:1rem 2.1rem;border-radius:100px;font-weight:500;font-size:.95rem;letter-spacing:.02em;transition:var(--tr);white-space:nowrap;cursor:pointer;border:none}
+.btn-primary{background:var(--terracotta);color:#fff}
+.btn-primary:hover{background:var(--terracotta-dark);transform:translateY(-2px);box-shadow:0 12px 32px rgba(198,123,92,.35)}
+.btn-sage{background:var(--sage);color:#fff}
+.btn-sage:hover{background:var(--sage-dark);transform:translateY(-2px);box-shadow:0 12px 32px rgba(138,154,123,.35)}
+.btn-outline{border:1.5px solid var(--terracotta);color:var(--terracotta);background:transparent}
+.btn-outline:hover{background:var(--terracotta);color:#fff}
+.btn-wa{background:var(--green);color:#fff}
+.btn-wa:hover{background:#1fb855;transform:translateY(-2px);box-shadow:0 12px 32px rgba(37,211,102,.35)}
+.btn-ghost{color:var(--terracotta);font-weight:500;padding:.5rem 0;border-bottom:1.5px solid transparent;transition:var(--tr-fast)}
+.btn-ghost:hover{border-color:var(--terracotta)}
+.btn-sm{padding:.65rem 1.35rem;font-size:.85rem}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none!important}
+.btn svg{flex-shrink:0}
+
+/* ============ HEADER ============ */
+.header{position:sticky;top:0;z-index:900;background:rgba(250,246,240,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);transition:var(--tr)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:82px;gap:1.5rem}
+.logo{display:flex;align-items:center;gap:.75rem;flex-shrink:0;cursor:pointer}
+.logo-mark{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--terracotta),var(--sage));color:#fff;font-family:'Fraunces',serif;font-size:1.55rem;font-weight:700;box-shadow:0 6px 20px rgba(198,123,92,.28)}
+.logo-text{font-family:'Fraunces',serif;font-size:1.4rem;font-weight:700;line-height:1;color:var(--charcoal);display:flex;flex-direction:column}
+.logo-text em{font-family:'Outfit',sans-serif;font-style:normal;font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;color:var(--sage);font-weight:500;margin-top:3px}
+.nav{display:flex;gap:1.9rem;align-items:center}
+.nav a{font-size:.92rem;font-weight:400;letter-spacing:.02em;color:var(--ink);position:relative;padding:.35rem 0;transition:var(--tr-fast);cursor:pointer}
+.nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--terracotta);transition:var(--tr);border-radius:2px}
+.nav a:hover::after,.nav a.active::after{width:100%}
+.nav a.active{color:var(--terracotta);font-weight:500}
+.header-actions{display:flex;align-items:center;gap:.35rem}
+.icon-btn{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;color:var(--charcoal);transition:var(--tr-fast);position:relative}
+.icon-btn:hover{background:var(--sand);color:var(--terracotta)}
+.icon-btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.cart-count{position:absolute;top:4px;right:2px;background:var(--terracotta);color:#fff;font-size:.65rem;font-weight:600;min-width:20px;height:20px;border-radius:100px;display:grid;place-items:center;padding:0 5px;transform:scale(0);transition:var(--tr)}
+.cart-count.on{transform:scale(1)}
+.wish-count{position:absolute;top:4px;right:2px;background:var(--sage);color:#fff;font-size:.65rem;font-weight:600;min-width:20px;height:20px;border-radius:100px;display:grid;place-items:center;padding:0 5px;transform:scale(0);transition:var(--tr)}
+.wish-count.on{transform:scale(1)}
+.burger{display:none}
+
+/* ============ SEARCH OVERLAY ============ */
+.search-overlay{position:fixed;inset:0;background:rgba(46,42,38,.65);backdrop-filter:blur(8px);z-index:1100;display:none;padding:6rem 1.5rem 2rem}
+.search-overlay.on{display:block;animation:fadeIn .25s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.search-box{max-width:680px;margin:0 auto;background:var(--white);border-radius:var(--radius-lg);padding:2rem;box-shadow:var(--shadow-lg);animation:slideDown .35s cubic-bezier(.4,0,.2,1)}
+@keyframes slideDown{from{transform:translateY(-20px);opacity:0}to{transform:none;opacity:1}}
+.search-input-wrap{display:flex;align-items:center;gap:.8rem;border-bottom:2px solid var(--line);padding-bottom:1rem;margin-bottom:1.5rem}
+.search-input-wrap svg{width:24px;height:24px;stroke:var(--muted);fill:none;stroke-width:1.8;flex-shrink:0}
+.search-input-wrap input{flex:1;border:none;outline:none;font-size:1.25rem;font-family:'Fraunces',serif;background:transparent;color:var(--charcoal)}
+.search-input-wrap input::placeholder{color:var(--muted);font-style:italic}
+.search-close{color:var(--muted);font-size:1.8rem;line-height:1;padding:.3rem;transition:var(--tr-fast)}
+.search-close:hover{color:var(--terracotta);transform:rotate(90deg)}
+.search-results{max-height:60vh;overflow-y:auto}
+.search-result{display:flex;gap:1rem;padding:.85rem;border-radius:var(--radius-sm);cursor:pointer;transition:var(--tr-fast);align-items:center}
+.search-result:hover{background:var(--sand)}
+.search-result img{width:56px;height:64px;border-radius:10px;object-fit:cover;background:var(--sand);flex-shrink:0}
+.search-result .sr-cat{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sage);margin-bottom:.1rem}
+.search-result .sr-name{font-family:'Fraunces',serif;font-size:1.05rem;color:var(--charcoal);font-weight:600}
+.search-result .sr-price{margin-left:auto;font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;color:var(--terracotta)}
+.search-empty{text-align:center;padding:2rem;color:var(--muted)}
+.search-hint{text-align:center;color:var(--muted);font-size:.85rem;padding:1.5rem 0}
+
+/* ============ PAGES ============ */
+.page{display:none;animation:fadeUp .5s ease}
+.page.active{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* ============ HERO ============ */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:var(--sand)}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.5}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(250,246,240,.97) 0%,rgba(250,246,240,.88) 45%,rgba(250,246,240,.25) 100%)}
+.hero-inner{position:relative;z-index:2;max-width:680px;padding:7rem 0}
+.eyebrow{display:inline-flex;align-items:center;gap:.65rem;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--sage);font-weight:500;margin-bottom:1.6rem}
+.eyebrow::before{content:'';width:36px;height:1px;background:var(--sage)}
+.hero h1{font-size:clamp(3rem,6.5vw,5.4rem);color:var(--charcoal);margin-bottom:1.5rem;font-weight:500;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--terracotta);font-weight:400}
+.hero p{font-size:1.1rem;color:var(--muted);max-width:520px;margin-bottom:2.6rem;font-weight:300;line-height:1.75}
+.hero-cta{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.hero-badges{display:flex;gap:3rem;margin-top:4rem;flex-wrap:wrap}
+.hero-badge strong{display:block;font-family:'Fraunces',serif;font-size:2.1rem;color:var(--terracotta);line-height:1;font-weight:600}
+.hero-badge span{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:.3rem;display:block}
+
+/* ============ SECTIONS ============ */
+.section{padding:7rem 0}
+.section-sm{padding:4.5rem 0}
+.section-head{text-align:center;max-width:680px;margin:0 auto 4rem}
+.section-head h2{font-size:clamp(2.2rem,4.4vw,3.3rem);color:var(--charcoal);margin-bottom:1rem;font-weight:500}
+.section-head p{color:var(--muted);font-weight:300;font-size:1.05rem}
+.section-head.left{text-align:left;margin-left:0}
+
+/* ============ CATEGORIES ============ */
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.8rem}
+.cat-card{text-align:center;cursor:pointer;transition:var(--tr)}
+.cat-card:hover{transform:translateY(-8px)}
+.cat-thumb{width:100%;aspect-ratio:1;border-radius:50%;overflow:hidden;margin-bottom:1rem;border:1px solid var(--line);background:var(--sand);position:relative;box-shadow:var(--shadow)}
+.cat-thumb::after{content:'';position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 0 6px rgba(255,255,255,.4);pointer-events:none}
+.cat-thumb img{width:100%;height:100%;object-fit:cover;transition:var(--tr)}
+.cat-card:hover .cat-thumb img{transform:scale(1.1)}
+.cat-card h4{font-size:1.1rem;color:var(--charcoal);font-weight:600;margin-bottom:.2rem}
+.cat-card span{font-size:.8rem;color:var(--muted)}
+
+/* ============ GRID PRODUITS ============ */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:2.2rem 1.8rem}
+.card{background:var(--white);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);transition:var(--tr);position:relative;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:transparent}
+.card-media{position:relative;aspect-ratio:1/1.08;overflow:hidden;background:var(--sand);cursor:pointer}
+.card-media img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.4,0,.2,1)}
+.card:hover .card-media img{transform:scale(1.08)}
+.badge{position:absolute;top:14px;left:14px;background:var(--sage);color:#fff;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;padding:.4rem .85rem;border-radius:100px;font-weight:500;z-index:2;box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.badge.bestseller{background:var(--gold)}
+.badge.promo{background:var(--red)}
+.badge.new{background:var(--terracotta)}
+.wish-btn{position:absolute;top:14px;right:14px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);display:grid;place-items:center;z-index:2;transition:var(--tr-fast);box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.wish-btn:hover{transform:scale(1.1)}
+.wish-btn svg{width:19px;height:19px;stroke:var(--charcoal);fill:none;stroke-width:1.8;transition:var(--tr-fast)}
+.wish-btn.on svg{fill:var(--terracotta);stroke:var(--terracotta)}
+.card-quick{position:absolute;bottom:14px;left:14px;right:14px;display:flex;gap:.5rem;opacity:0;transform:translateY(14px);transition:var(--tr)}
+.card:hover .card-quick{opacity:1;transform:none}
+.card-quick button{flex:1;padding:.7rem;border-radius:100px;font-size:.8rem;font-weight:500;letter-spacing:.02em;transition:var(--tr-fast);cursor:pointer}
+.q-add{background:var(--terracotta);color:#fff}
+.q-add:hover{background:var(--terracotta-dark)}
+.q-view{background:rgba(255,255,255,.96);color:var(--charcoal);backdrop-filter:blur(6px)}
+.q-view:hover{background:#fff;color:var(--terracotta)}
+.card-body{padding:1.3rem 1.4rem 1.5rem;display:flex;flex-direction:column;flex:1}
+.card-cat{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:.5rem;font-weight:500}
+.card-title{font-family:'Fraunces',serif;font-size:1.32rem;font-weight:600;color:var(--charcoal);margin-bottom:.5rem;line-height:1.25;cursor:pointer;transition:var(--tr-fast)}
+.card-title:hover{color:var(--terracotta)}
+.card-desc{font-size:.86rem;color:var(--muted);font-weight:300;margin-bottom:1rem;flex:1;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-top:auto}
+.price{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:700;color:var(--terracotta)}
+.price-old{font-size:.85rem;color:var(--muted);text-decoration:line-through;margin-left:.4rem;font-family:'Outfit',sans-serif;font-weight:400}
+.stars{color:var(--gold);font-size:.85rem;letter-spacing:.1em;margin-bottom:.4rem}
+
+/* ============ VALEURS ============ */
+.values{background:var(--charcoal);color:#fff;padding:4.5rem 0;position:relative;overflow:hidden}
+.values::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(198,123,92,.2),transparent 70%)}
+.values::after{content:'';position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(138,154,123,.15),transparent 70%)}
+.values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2.5rem;text-align:center;position:relative;z-index:2}
+.value-item svg{width:36px;height:36px;stroke:var(--terracotta);fill:none;stroke-width:1.4;margin:0 auto 1rem}
+.value-item h4{font-size:1.2rem;margin-bottom:.4rem;color:#fff;font-weight:600}
+.value-item p{font-size:.87rem;opacity:.7;font-weight:300}
+
+/* ============ BOUTIQUE FILTRES ============ */
+.filters{display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center;margin-bottom:1.8rem}
+.chip{padding:.6rem 1.3rem;border-radius:100px;border:1px solid var(--line);background:var(--white);font-size:.85rem;color:var(--muted);transition:var(--tr-fast);letter-spacing:.02em;cursor:pointer}
+.chip:hover{border-color:var(--terracotta);color:var(--terracotta)}
+.chip.active{background:var(--terracotta);border-color:var(--terracotta);color:#fff}
+.filter-bar{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;justify-content:space-between;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.2rem 1.5rem;margin-bottom:2.8rem;box-shadow:var(--shadow)}
+.filter-group{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+.filter-group label{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.filter-group select{padding:.6rem 2.2rem .6rem 1.1rem;border:1px solid var(--line);border-radius:100px;background:var(--cream);color:var(--ink);font-size:.88rem;cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238B7F73' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .85rem center}
+.filter-group select:focus{outline:2px solid var(--terracotta);outline-offset:1px}
+.empty{text-align:center;padding:5rem 1rem;color:var(--muted)}
+.empty svg{width:80px;height:80px;stroke:var(--terracotta);fill:none;stroke-width:1;margin:0 auto 1.5rem;opacity:.5}
+
+/* ============ FICHE PRODUIT ============ */
+.pd-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:4.5rem;align-items:start}
+.pd-media{border-radius:var(--radius);overflow:hidden;background:var(--sand);aspect-ratio:1/1.08;position:sticky;top:110px;box-shadow:var(--shadow)}
+.pd-media img{width:100%;height:100%;object-fit:cover}
+.pd-info h1{font-size:clamp(2.2rem,4.2vw,3.2rem);color:var(--charcoal);margin-bottom:.7rem;font-weight:500}
+.pd-price{font-family:'Fraunces',serif;font-size:2.6rem;font-weight:700;color:var(--terracotta);margin:1.4rem 0}
+.pd-price small{font-size:.85rem;font-family:'Outfit',sans-serif;font-weight:400;color:var(--muted);letter-spacing:.04em;display:block;margin-top:.3rem}
+.pd-desc{color:var(--muted);font-weight:300;margin-bottom:2rem;font-size:1.02rem;line-height:1.75}
+.tags{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2rem}
+.tag{padding:.4rem .95rem;border-radius:100px;background:var(--sand);font-size:.78rem;color:var(--brown);letter-spacing:.02em;font-weight:500}
+.tag.stock-in{background:rgba(138,154,123,.2);color:var(--sage-dark)}
+.tag.stock-out{background:rgba(192,57,43,.12);color:var(--red)}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:100px;overflow:hidden;background:var(--white)}
+.qty button{width:46px;height:50px;font-size:1.25rem;color:var(--terracotta);transition:var(--tr-fast)}
+.qty button:hover{background:var(--sand)}
+.qty span{width:56px;text-align:center;font-weight:500;font-size:1.05rem}
+.pd-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin:1.8rem 0 2.2rem}
+.accordion{border-top:1px solid var(--line);margin-top:2rem}
+.acc-item{border-bottom:1px solid var(--line)}
+.acc-head{width:100%;text-align:left;padding:1.3rem 0;display:flex;justify-content:space-between;align-items:center;font-weight:500;color:var(--charcoal);font-size:1.02rem;cursor:pointer;font-family:'Fraunces',serif}
+.acc-head .plus{color:var(--terracotta);font-size:1.4rem;transition:var(--tr);font-weight:300;line-height:1}
+.acc-item.open .plus{transform:rotate(45deg)}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.acc-body div{padding-bottom:1.3rem;color:var(--muted);font-size:.94rem;font-weight:300;line-height:1.75}
+
+/* ============ PANIER DRAWER ============ */
+.cart-drawer{position:fixed;top:0;right:0;bottom:0;width:min(460px,100%);background:var(--cream);z-index:1200;transform:translateX(100%);transition:transform .45s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;box-shadow:-20px 0 60px rgba(46,42,38,.2)}
+.cart-drawer.on{transform:translateX(0)}
+.cart-overlay{position:fixed;inset:0;background:rgba(46,42,38,.5);backdrop-filter:blur(4px);z-index:1150;opacity:0;pointer-events:none;transition:var(--tr)}
+.cart-overlay.on{opacity:1;pointer-events:auto}
+.cart-head{padding:1.6rem 1.8rem;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.cart-head h3{font-size:1.5rem;color:var(--charcoal);font-weight:600}
+.cart-close{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:var(--muted);font-size:1.5rem;transition:var(--tr-fast)}
+.cart-close:hover{background:var(--sand);color:var(--terracotta);transform:rotate(90deg)}
+.cart-body{flex:1;overflow-y:auto;padding:1.2rem 1.8rem}
+.cart-item{display:grid;grid-template-columns:76px 1fr auto;gap:1rem;padding:1.1rem 0;border-bottom:1px solid var(--line);align-items:center}
+.cart-item img{width:76px;height:88px;object-fit:cover;border-radius:12px;background:var(--sand)}
+.cart-item h4{font-family:'Fraunces',serif;font-size:1.1rem;color:var(--charcoal);margin-bottom:.2rem;font-weight:600;line-height:1.25}
+.cart-item .ci-cat{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);margin-bottom:.45rem;font-weight:500}
+.cart-qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:100px;background:var(--white);margin-top:.3rem}
+.cart-qty button{width:30px;height:30px;font-size:1rem;color:var(--terracotta);transition:var(--tr-fast)}
+.cart-qty button:hover{background:var(--sand)}
+.cart-qty span{width:34px;text-align:center;font-size:.88rem;font-weight:500}
+.remove{color:var(--muted);font-size:1.4rem;transition:var(--tr-fast);line-height:1;padding:.3rem;align-self:flex-start}
+.remove:hover{color:var(--red)}
+.cart-foot{padding:1.5rem 1.8rem;border-top:1px solid var(--line);background:var(--white);flex-shrink:0}
+.cart-empty{text-align:center;padding:4rem 1rem;color:var(--muted)}
+.cart-empty svg{width:70px;height:70px;stroke:var(--terracotta);fill:none;stroke-width:1;margin:0 auto 1.5rem;opacity:.4}
+
+/* ============ SUMMARY ============ */
+.summary{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow)}
+.summary h3{font-size:1.55rem;color:var(--charcoal);margin-bottom:1.5rem;font-weight:600}
+.sum-row{display:flex;justify-content:space-between;padding:.75rem 0;font-size:.95rem;color:var(--muted)}
+.sum-row.total{border-top:1px solid var(--line);margin-top:.9rem;padding-top:1.3rem;font-family:'Fraunces',serif;font-size:1.65rem;font-weight:700;color:var(--terracotta)}
+.help{font-size:.78rem;color:var(--muted);margin-top:.35rem}
+
+/* ============ FORMULAIRES ============ */
+.form-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:2.5rem;box-shadow:var(--shadow)}
+.field{margin-bottom:1.2rem}
+.field label{display:block;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem;font-weight:500}
+.field input,.field textarea,.field select{width:100%;padding:.9rem 1.15rem;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--cream);transition:var(--tr-fast);color:var(--ink)}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--terracotta);background:#fff;box-shadow:0 0 0 4px rgba(198,123,92,.1)}
+.field textarea{resize:vertical;min-height:110px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+
+/* ============ INFO CONTACT ============ */
+.info-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:2.2rem;box-shadow:var(--shadow)}
+.info-row{display:flex;gap:1.1rem;padding:1.2rem 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.info-row:last-child{border:none}
+.info-ico{width:44px;height:44px;border-radius:12px;background:var(--sand);display:grid;place-items:center;flex-shrink:0;color:var(--terracotta)}
+.info-ico svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.7}
+.info-row h5{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:.2rem;font-family:'Outfit',sans-serif}
+.info-row p,.info-row a{color:var(--charcoal);font-size:.96rem}
+.info-row a:hover{color:var(--terracotta)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:3.5rem;align-items:start}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:center}
+.about-media{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/4.6;background:var(--sand);box-shadow:var(--shadow)}
+.about-media img{width:100%;height:100%;object-fit:cover}
+.about-media::before{content:'';position:absolute;inset:0;border:2px solid rgba(198,123,92,.4);border-radius:var(--radius);margin:16px;z-index:2;pointer-events:none}
+.about-text h2{font-size:clamp(2.2rem,3.8vw,3rem);color:var(--charcoal);margin-bottom:1.4rem;font-weight:500}
+.about-text p{color:var(--muted);font-weight:300;margin-bottom:1.2rem;line-height:1.8}
+.signature{font-family:'Fraunces',serif;font-style:italic;font-size:1.55rem;color:var(--terracotta);margin-top:1.6rem}
+
+/* ============ FAQ ============ */
+.faq-list{max-width:840px;margin:0 auto}
+.faq-item{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:1rem;overflow:hidden;transition:var(--tr)}
+.faq-item.open{border-color:var(--terracotta);box-shadow:var(--shadow)}
+.faq-q{width:100%;text-align:left;padding:1.5rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:'Fraunces',serif;font-size:1.25rem;font-weight:600;color:var(--charcoal);cursor:pointer}
+.faq-q span.plus{font-size:1.6rem;color:var(--terracotta);transition:var(--tr);flex-shrink:0;font-family:'Outfit',sans-serif;font-weight:300;line-height:1}
+.faq-item.open .plus{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a p{padding:0 1.8rem 1.6rem;color:var(--muted);font-weight:300;font-size:.96rem;line-height:1.8}
+
+/* ============ BLOG ============ */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:2.2rem}
+.post{background:var(--white);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);transition:var(--tr);cursor:pointer}
+.post:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.post-media{aspect-ratio:16/10;overflow:hidden;background:var(--sand)}
+.post-media img{width:100%;height:100%;object-fit:cover;transition:var(--tr)}
+.post:hover .post-media img{transform:scale(1.08)}
+.post-body{padding:1.7rem}
+.post-meta{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:.7rem;font-weight:500}
+.post h3{font-size:1.42rem;color:var(--charcoal);margin-bottom:.7rem;font-weight:600;line-height:1.3}
+.post p{font-size:.9rem;color:var(--muted);font-weight:300;line-height:1.7}
+
+/* ============ FOOTER ============ */
+.footer{background:var(--charcoal);color:#fff;padding:5.5rem 0 2rem;margin-top:2rem}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:3.5rem;margin-bottom:3.5rem}
+.footer h4{font-size:1.15rem;margin-bottom:1.5rem;color:#fff;font-family:'Fraunces',serif;font-weight:600}
+.footer p,.footer a{font-size:.88rem;color:rgba(255,255,255,.6);font-weight:300;line-height:2}
+.footer a:hover{color:var(--terracotta)}
+.footer .logo-text{color:#fff}
+.footer-social{display:flex;gap:.75rem;margin-top:1.5rem}
+.footer-social a{width:42px;height:42px;border-radius:12px;border:1px solid rgba(255,255,255,.18);display:grid;place-items:center;transition:var(--tr-fast)}
+.footer-social a:hover{background:var(--terracotta);border-color:var(--terracotta);transform:translateY(-3px)}
+.footer-social svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:1.7}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.footer-bottom p{font-size:.8rem}
+.admin-lock{opacity:.3;transition:var(--tr-fast);font-size:1.2rem;padding:.4rem;color:#fff}
+.admin-lock:hover{opacity:1;color:var(--terracotta)}
+
+/* ============ WHATSAPP FLOAT ============ */
+.wa-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;border-radius:50%;background:var(--green);display:grid;place-items:center;z-index:850;box-shadow:0 10px 30px rgba(37,211,102,.45);transition:var(--tr)}
+.wa-float:hover{transform:scale(1.1) translateY(-3px)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+.wa-float::after{content:'';position:absolute;inset:0;border-radius:50%;border:2px solid var(--green);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.6);opacity:0}}
+
+/* ============ MODALES ============ */
+.overlay{position:fixed;inset:0;background:rgba(46,42,38,.55);backdrop-filter:blur(6px);z-index:1300;display:none;align-items:center;justify-content:center;padding:1.5rem;overflow-y:auto}
+.overlay.on{display:flex}
+.modal{background:var(--cream);border-radius:var(--radius);width:min(600px,100%);padding:2.6rem;position:relative;box-shadow:var(--shadow-lg);animation:pop .4s cubic-bezier(.4,0,.2,1);max-height:92vh;overflow-y:auto}
+@keyframes pop{from{opacity:0;transform:scale(.95) translateY(20px)}to{opacity:1;transform:none}}
+.modal h3{font-size:1.8rem;color:var(--charcoal);margin-bottom:.6rem;font-weight:600}
+.modal-x{position:absolute;top:1.2rem;right:1.3rem;font-size:1.7rem;color:var(--muted);line-height:1;transition:var(--tr-fast);padding:.3rem}
+.modal-x:hover{color:var(--terracotta);transform:rotate(90deg)}
+
+/* ============ ADMIN ============ */
+.admin-panel{position:fixed;inset:0;background:var(--cream);z-index:1400;overflow-y:auto;display:none;animation:fadeUp .35s ease}
+.admin-panel.on{display:block}
+.admin-top{background:var(--charcoal);color:#fff;padding:1.1rem 0;position:sticky;top:0;z-index:10;box-shadow:0 4px 24px rgba(0,0,0,.2)}
+.admin-top .container{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.admin-top h2{color:#fff;font-size:1.4rem;display:flex;align-items:center;gap:.6rem;font-weight:600}
+.admin-tabs{display:flex;gap:.4rem;flex-wrap:wrap}
+.admin-tab{padding:.6rem 1.15rem;border-radius:100px;font-size:.84rem;color:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.2);transition:var(--tr-fast);cursor:pointer}
+.admin-tab:hover{color:#fff;border-color:rgba(255,255,255,.5)}
+.admin-tab.on{background:var(--terracotta);border-color:var(--terracotta);color:#fff}
+.admin-tab.danger{background:var(--red);border-color:var(--red);color:#fff}
+.admin-body{padding:2.5rem 0 5rem}
+.admin-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.admin-card h3{font-size:1.45rem;color:var(--charcoal);margin-bottom:1.4rem;font-weight:600}
+.prod-row{display:grid;grid-template-columns:70px 1fr auto;gap:1rem;align-items:center;padding:1rem;border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:.8rem;background:#fff;transition:var(--tr-fast)}
+.prod-row:hover{border-color:var(--terracotta);box-shadow:var(--shadow)}
+.prod-row img{width:70px;height:78px;object-fit:cover;border-radius:10px;background:var(--sand)}
+.prod-row h5{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--charcoal);font-weight:600}
+.prod-row .meta{font-size:.8rem;color:var(--muted);margin-top:.2rem}
+.row-actions{display:flex;gap:.4rem}
+.mini{padding:.5rem .95rem;border-radius:100px;font-size:.78rem;border:1px solid var(--line);transition:var(--tr-fast);color:var(--muted);background:#fff;cursor:pointer}
+.mini:hover{border-color:var(--terracotta);color:var(--terracotta)}
+.mini.danger:hover{border-color:var(--red);color:var(--red)}
+.img-preview{width:100%;height:180px;object-fit:cover;border-radius:var(--radius-sm);background:var(--sand);margin-bottom:.8rem;border:1px dashed var(--line);overflow:hidden}
+.img-preview img{width:100%;height:100%;object-fit:cover}
+.img-preview .ph{display:grid;place-items:center;height:100%;color:var(--muted);font-size:.85rem}
+
+/* STATS */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.2rem;margin-bottom:1.5rem}
+.stat-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:1.5rem;transition:var(--tr-fast)}
+.stat-card:hover{border-color:var(--terracotta);box-shadow:var(--shadow)}
+.stat-card .s-label{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:.6rem}
+.stat-card .s-value{font-family:'Fraunces',serif;font-size:2.2rem;font-weight:700;color:var(--terracotta);line-height:1}
+.stat-card .s-sub{font-size:.8rem;color:var(--muted);margin-top:.3rem}
+
+/* ============ TOAST ============ */
+.toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,140px);background:var(--charcoal);color:#fff;padding:1rem 1.8rem;border-radius:100px;font-size:.9rem;z-index:2000;transition:transform .45s cubic-bezier(.4,0,.2,1);box-shadow:0 14px 40px rgba(46,42,38,.35);display:flex;align-items:center;gap:.7rem;max-width:90vw}
+.toast.on{transform:translate(-50%,0)}
+.toast.ok{background:var(--sage-dark)}
+.toast.err{background:var(--red)}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1000px){
+  .about-grid,.contact-grid,.pd-grid{grid-template-columns:1fr;gap:2.5rem}
+  .pd-media{position:static}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2.4rem}
+}
+@media(max-width:820px){
+  .nav{position:fixed;top:82px;left:0;right:0;background:var(--cream);flex-direction:column;padding:1.5rem;gap:0;border-bottom:1px solid var(--line);transform:translateY(-150%);transition:transform .45s ease;box-shadow:var(--shadow);align-items:flex-start}
+  .nav.on{transform:translateY(0)}
+  .nav a{width:100%;padding:1rem 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+  .burger{display:grid}
+  .section{padding:4.5rem 0}
+  .hero-inner{padding:5rem 0}
+  .hero-badges{gap:2rem}
+  .header-inner{height:74px}
+  .logo-mark{width:42px;height:42px;font-size:1.4rem}
+}
+@media(max-width:560px){
+  .grid{grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:1.3rem}
+  .card-body{padding:1rem}
+  .card-title{font-size:1.15rem}
+  .price{font-size:1.25rem}
+  .field-row{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .cart-item{grid-template-columns:66px 1fr;gap:.8rem}
+  .cart-item img{width:66px;height:78px}
+  .modal{padding:1.8rem}
+  .logo-text{font-size:1.25rem}
+  .hero-badges{gap:1.5rem}
+  .hero-badge strong{font-size:1.7rem}
+  .section-head h2{font-size:1.9rem}
+  .pd-price{font-size:2.1rem}
+  .admin-tab{font-size:.76rem;padding:.5rem .9rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container header-inner">
+    <a class="logo" onclick="go('accueil')">
+      <span class="logo-mark">F</span>
+      <span class="logo-text">Fedoue<em>Product</em></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a data-p="accueil" onclick="go('accueil')">Accueil</a>
+      <a data-p="boutique" onclick="go('boutique')">Boutique</a>
+      <a data-p="apropos" onclick="go('apropos')">À propos</a>
+      <a data-p="faq" onclick="go('faq')">FAQ</a>
+      <a data-p="blog" onclick="go('blog')">Journal</a>
+      <a data-p="contact" onclick="go('contact')">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" onclick="openSearch()" title="Rechercher">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn" onclick="toggleWishlistView()" title="Favoris">
+        <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 00-7.8 7.8l1.1 1L12 21.2l7.7-7.8 1.1-1a5.5 5.5 0 000-7.8z"/></svg>
+        <span class="wish-count" id="wishCount">0</span>
+      </button>
+      <button class="icon-btn" onclick="openCart()" title="Panier">
+        <svg viewBox="0 0 24 24"><path d="M6 2l1.5 3M18 2l-1.5 3"/><path d="M3 6h18l-1.5 12.5a2 2 0 01-2 1.5H6.5a2 2 0 01-2-1.5L3 6z"/><path d="M9 10v5M15 10v5"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn burger" onclick="document.getElementById('nav').classList.toggle('on')">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ SEARCH OVERLAY ============ -->
+<div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)closeSearch()">
+  <div class="search-box">
+    <div class="search-input-wrap">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="liveSearch" placeholder="Rechercher un produit, une catégorie..." oninput="runLiveSearch()" autocomplete="off">
+      <button class="search-close" onclick="closeSearch()">×</button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+    <div class="search-hint" id="searchHint">Commencez à taper pour voir les résultats ✨</div>
+  </div>
+</div>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h3>Mon panier</h3>
+    <button class="cart-close" onclick="closeCart()">×</button>
+  </div>
+  <div class="cart-body" id="cartDrawerBody"></div>
+  <div class="cart-foot" id="cartDrawerFoot"></div>
+</aside>
+
+<main>
+
+<!-- ============ ACCUEIL ============ -->
+<section class="page active" id="page-accueil">
+  <div class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="container hero-inner">
+      <span class="eyebrow">Beauté naturelle · Cap-Haïtien</span>
+      <h1>Révélez votre <em>éclat</em> naturel</h1>
+      <p>Des soins bio pour le visage, du maquillage végan et des huiles capillaires formulés avec des trésors d'Haïti. Livraison rapide à Cap-Haïtien et partout dans le pays.</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" onclick="go('boutique')">Découvrir la boutique</button>
+        <button class="btn btn-outline" onclick="openWA('Bonjour Fedoue Product 🌸, je souhaite des conseils beauté.')">Conseil personnalisé</button>
+      </div>
+      <div class="hero-badges">
+        <div class="hero-badge"><strong>100%</strong><span>Naturel & Bio</span></div>
+        <div class="hero-badge"><strong>24h</strong><span>Livraison Cap-Haïtien</span></div>
+        <div class="hero-badge"><strong>+500</strong><span>Clientes satisfaites</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section container">
+    <div class="section-head">
+      <span class="eyebrow" style="justify-content:center">Nos univers</span>
+      <h2>Explorez nos catégories</h2>
+      <p>Chaque gamme est pensée pour un besoin précis, avec des ingrédients naturels et une formule douce.</p>
+    </div>
+    <div class="cats" id="homeCats"></div>
+  </div>
+
+  <div class="section" style="background:var(--sand)">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" style="justify-content:center">Best-sellers</span>
+        <h2>Les plus aimés</h2>
+        <p>Nos produits stars, plébiscités par notre communauté.</p>
+      </div>
+      <div class="grid" id="homeGrid"></div>
+      <div style="text-align:center;margin-top:3.5rem">
+        <button class="btn btn-primary" onclick="go('boutique')">Voir toute la boutique</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="values">
+    <div class="container values-grid">
+      <div class="value-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2l2.4 5.3 5.6.6-4.2 3.8 1.2 5.6L12 14.5 6.9 17.3l1.2-5.6L3.9 7.9l5.6-.6z"/></svg>
+        <h4>Ingrédients naturels</h4><p>Formules bio, sans parabènes ni sulfates</p>
+      </div>
+      <div class="value-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-4 12.7V19a2 2 0 002 2h4a2 2 0 002-2v-4.3A7 7 0 0012 2z"/><path d="M9 22h6"/></svg>
+        <h4>Fabriqué en Haïti</h4><p>Savoir-faire local, ingrédients d'ici</p>
+      </div>
+      <div class="value-item">
+        <svg viewBox="0 0 24 24"><path d="M12 21s-8-4.6-8-11a5 5 0 019-3 5 5 0 019 3c0 6.4-8 11-8 11z"/></svg>
+        <h4>Cruelty-free & Végan</h4><p>Jamais testés sur les animaux</p>
+      </div>
+      <div class="value-item">
+        <svg viewBox="0 0 24 24"><rect x="1" y="6" width="15" height="11" rx="2"/><path d="M16 10h4l3 3v4h-7z"/><circle cx="5.5" cy="19" r="1.8"/><circle cx="18.5" cy="19" r="1.8"/></svg>
+        <h4>Livraison rapide</h4><p>Cap-Haïtien en 24h · tout le pays en 72h</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section container">
+    <div class="about-grid">
+      <div class="about-media"><img id="homeAboutImg" alt="Atelier Fedoue Product"></div>
+      <div class="about-text">
+        <span class="eyebrow">Notre histoire</span>
+        <h2>Née à Cap-Haïtien,<br>pour votre peau</h2>
+        <p>Fedoue Product est née d'une conviction simple : la beauté naturelle mérite des soins à la hauteur. Nous sélectionnons les meilleurs ingrédients — karité, huile de coco, argile rose, ricin noir — pour créer des formules douces, efficaces et accessibles.</p>
+        <p>Chaque produit est préparé avec soin, testé et pensé pour les peaux et cheveux de chez nous, sous notre climat.</p>
+        <p class="signature">— L'équipe Fedoue Product</p>
+        <button class="btn btn-outline" style="margin-top:1.8rem" onclick="go('apropos')">En savoir plus</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOUTIQUE ============ -->
+<section class="page" id="page-boutique">
+  <div class="container" style="padding-top:4rem;padding-bottom:5rem">
+    <div class="section-head">
+      <span class="eyebrow" style="justify-content:center">Boutique</span>
+      <h2>Tous nos produits</h2>
+      <p>Filtrez selon votre type de peau et vos besoins pour trouver le soin idéal.</p>
+    </div>
+    <div class="filters" id="catChips"></div>
+    <div class="filter-bar">
+      <div class="filter-group">
+        <label>Peau</label>
+        <select id="fSkin" onchange="applyFilters()">
+          <option>Tous</option><option>Normale</option><option>Sèche</option>
+          <option>Grasse</option><option>Mixte</option><option>Sensible</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Besoin</label>
+        <select id="fNeed" onchange="applyFilters()">
+          <option>Tous</option><option>Hydratation</option><option>Anti-âge</option>
+          <option>Éclat</option><option>Anti-acné</option><option>Réparation</option>
+          <option>Protection</option><option>Croissance</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Trier</label>
+        <select id="fSort" onchange="applyFilters()">
+          <option value="pop">Popularité</option>
+          <option value="asc">Prix croissant</option>
+          <option value="desc">Prix décroissant</option>
+          <option value="new">Nouveautés</option>
+        </select>
+      </div>
+    </div>
+    <div class="grid" id="shopGrid"></div>
+    <div id="shopEmpty" style="display:none" class="empty">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <p>Aucun produit ne correspond à votre recherche.</p>
+      <button class="btn btn-outline btn-sm" style="margin-top:1.2rem" onclick="resetFilters()">Réinitialiser les filtres</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FICHE PRODUIT ============ -->
+<section class="page" id="page-produit">
+  <div class="container" style="padding-top:3rem;padding-bottom:5rem">
+    <button class="btn-ghost" style="margin-bottom:2.5rem;font-size:.9rem" onclick="go('boutique')">← Retour à la boutique</button>
+    <div id="pdContent"></div>
+  </div>
+</section>
+
+<!-- ============ À PROPOS ============ -->
+<section class="page" id="page-apropos">
+  <div class="container" style="padding-top:4rem;padding-bottom:5rem">
+    <div class="section-head">
+      <span class="eyebrow" style="justify-content:center">Notre maison</span>
+      <h2>À propos de Fedoue Product</h2>
+      <p>Une marque haïtienne de cosmétiques naturels, née à Cap-Haïtien.</p>
+    </div>
+    <div class="about-grid" style="margin-bottom:5.5rem">
+      <div class="about-media"><img id="aboutImg1" alt="Atelier Fedoue"></div>
+      <div class="about-text">
+        <h2>Notre mission</h2>
+        <p>Offrir à chaque personne des soins de beauté de qualité, naturels, abordables et adaptés à notre réalité. Nous croyons que prendre soin de soi n'est pas un luxe — c'est un rituel essentiel.</p>
+        <p>Depuis nos débuts à Cap-Haïtien, nous formulons nos produits à partir d'ingrédients soigneusement sélectionnés : beurre de karité brut, huile de coco vierge, argile rose, huile de ricin noire, extraits de plantes locales.</p>
+        <p>Aucun test sur les animaux. Aucun parabène. Aucune promesse en l'air. Juste des formules qui fonctionnent.</p>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="eyebrow">Notre engagement</span>
+        <h2>Votre peau,<br>notre priorité</h2>
+        <p>Nous accompagnons chaque cliente avec des conseils personnalisés. Vous hésitez sur un produit ? Écrivez-nous sur WhatsApp, nous vous guidons gratuitement.</p>
+        <button class="btn btn-wa" style="margin-top:1.2rem" onclick="openWA('Bonjour Fedoue Product 🌸, j\'aimerais un conseil personnalisé.')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95-.26-.1-.45-.15-.64.15-.19.29-.74.94-.9 1.14-.17.19-.33.21-.62.07-.29-.15-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.5.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-.99.97-.99 2.36s1.01 2.74 1.15 2.93c.15.19 1.99 3.04 4.82 4.27.67.29 1.2.46 1.61.59.68.21 1.3.18 1.79.11.55-.08 1.69-.69 1.93-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34z"/><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.27 4.86L2 22l5.28-1.38A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+          Parler à une conseillère
+        </button>
+      </div>
+      <div class="about-media"><img id="aboutImg2" alt="Rituel beauté Fedoue"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="page" id="page-faq">
+  <div class="container" style="padding-top:4rem;padding-bottom:5rem">
+    <div class="section-head">
+      <span class="eyebrow" style="justify-content:center">Aide</span>
+      <h2>Questions fréquentes</h2>
+      <p>Tout ce que vous devez savoir avant de commander.</p>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+    <div style="text-align:center;margin-top:3.5rem">
+      <p style="color:var(--muted);margin-bottom:1.3rem">Une autre question ?</p>
+      <button class="btn btn-wa" onclick="openWA('Bonjour Fedoue Product 🌸, j\'ai une question : ')">Poser ma question sur WhatsApp</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section class="page" id="page-blog">
+  <div class="container" style="padding-top:4rem;padding-bottom:5rem">
+    <div class="section-head">
+      <span class="eyebrow" style="justify-content:center">Le Journal</span>
+      <h2>Conseils & rituels beauté</h2>
+      <p>Nos astuces pour prendre soin de votre peau et de vos cheveux au quotidien.</p>
+    </div>
+    <div class="blog-grid" id="blogGrid"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="page" id="page-contact">
+  <div class="container" style="padding-top:4rem;padding-bottom:5rem">
+    <div class="section-head">
+      <span class="eyebrow" style="justify-content:center">Écrivez-nous</span>
+      <h2>Contact</h2>
+      <p>Notre équipe vous répond en général en moins de 2 heures.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="info-card">
+        <div class="info-row">
+          <div class="info-ico"><svg viewBox="0 0 24 24"><path d="M21 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 011.1 4.2 2 2 0 013.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.4 2.1L7.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c.9.4 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg></div>
+          <div><h5>WhatsApp / Téléphone</h5>
+            <p><a href="#" id="ctWa1" target="_blank"></a></p>
+            <p><a href="#" id="ctWa2" target="_blank"></a></p>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><h5>Adresse</h5><p id="ctAddr"></p></div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg></div>
+          <div><h5>Email</h5><p><a href="#" id="ctMail"></a></p></div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div><h5>Horaires</h5><p>Lun – Sam : 8h00 – 18h00<br>Dimanche : sur rendez-vous</p></div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+          <div><h5>Paiement Natcash</h5><p id="ctNat" style="font-weight:500;color:var(--terracotta)"></p></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <h3 style="font-size:1.7rem;color:var(--charcoal);margin-bottom:.5rem;font-family:'Fraunces',serif">Envoyez-nous un message</h3>
+        <p style="color:var(--muted);font-size:.9rem;font-weight:300;margin-bottom:1.8rem">Remplissez le formulaire, il s'ouvrira directement dans WhatsApp.</p>
+        <form onsubmit="contactSubmit(event)">
+          <div class="field-row">
+            <div class="field"><label>Nom complet *</label><input required id="cnName" placeholder="Votre nom"></div>
+            <div class="field"><label>Téléphone *</label><input required id="cnPhone" placeholder="+509 ..."></div>
+          </div>
+          <div class="field"><label>Sujet</label>
+            <select id="cnSubject">
+              <option>Demande d'information</option>
+              <option>Conseil produit</option>
+              <option>Suivi de commande</option>
+              <option>Revente / Partenariat</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="field"><label>Message *</label><textarea required id="cnMsg" placeholder="Votre message..."></textarea></div>
+          <button class="btn btn-wa" style="width:100%" type="submit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95-.26-.1-.45-.15-.64.15-.19.29-.74.94-.9 1.14-.17.19-.33.21-.62.07-.29-.15-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.5.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-.99.97-.99 2.36s1.01 2.74 1.15 2.93c.15.19 1.99 3.04 4.82 4.27.67.29 1.2.46 1.61.59.68.21 1.3.18 1.79.11.55-.08 1.69-.69 1.93-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34z"/><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.27 4.86L2 22l5.28-1.38A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            Envoyer sur WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAIEMENT ============ -->
+<section class="page" id="page-paiement">
+  <div class="container" style="padding-top:4rem;padding-bottom:5rem">
+    <div class="section-head left" style="margin-bottom:2.5rem">
+      <span class="eyebrow">Dernière étape</span>
+      <h2>Finaliser la commande</h2>
+      <p>Remplissez le formulaire ci-dessous. Votre commande nous parviendra directement sur WhatsApp, bien structurée.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="form-card">
+        <form id="orderForm" onsubmit="submitOrder(event)">
+          <div class="field-row">
+            <div class="field"><label>Nom complet *</label><input required id="oName" placeholder="Ex : Marie Joseph"></div>
+            <div class="field"><label>Téléphone / WhatsApp *</label><input required id="oPhone" placeholder="+509 ..."></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label>Ville / Commune *</label><input required id="oCity" placeholder="Ex : Cap-Haïtien"></div>
+            <div class="field"><label>Adresse de livraison *</label><input required id="oAddr" placeholder="Rue, quartier, point de repère"></div>
+          </div>
+          <div class="field"><label>Email (optionnel)</label><input type="email" id="oMail" placeholder="vous@email.com"></div>
+          <h3 style="font-size:1.5rem;color:var(--charcoal);margin:2rem 0 1.2rem;font-family:'Fraunces',serif">Mode de paiement</h3>
+          <div style="display:grid;gap:.9rem;margin-bottom:1.5rem" id="payMethods">
+            <label class="pay-opt" style="display:flex;gap:1rem;align-items:flex-start;padding:1.2rem 1.4rem;border:1.5px solid var(--line);border-radius:var(--radius-sm);cursor:pointer;background:var(--white);transition:var(--tr-fast)">
+              <input type="radio" name="pay" value="Natcash" checked onchange="selPay(this)" style="margin-top:.3rem;accent-color:var(--terracotta);width:18px;height:18px">
+              <div><strong style="color:var(--charcoal);font-weight:500;display:block;margin-bottom:.2rem">Dépôt Natcash</strong><span style="font-size:.84rem;color:var(--muted)">Déposez au <strong id="natInline"></strong> puis envoyez la capture sur WhatsApp.</span></div>
+            </label>
+            <label class="pay-opt" style="display:flex;gap:1rem;align-items:flex-start;padding:1.2rem 1.4rem;border:1.5px solid var(--line);border-radius:var(--radius-sm);cursor:pointer;background:var(--white);transition:var(--tr-fast)">
+              <input type="radio" name="pay" value="MonCash" onchange="selPay(this)" style="margin-top:.3rem;accent-color:var(--terracotta);width:18px;height:18px">
+              <div><strong style="color:var(--charcoal);font-weight:500;display:block;margin-bottom:.2rem">MonCash</strong><span style="font-size:.84rem;color:var(--muted)">Nous vous envoyons le numéro après confirmation.</span></div>
+            </label>
+            <label class="pay-opt" style="display:flex;gap:1rem;align-items:flex-start;padding:1.2rem 1.4rem;border:1.5px solid var(--line);border-radius:var(--radius-sm);cursor:pointer;background:var(--white);transition:var(--tr-fast)">
+              <input type="radio" name="pay" value="Paiement à la livraison" onchange="selPay(this)" style="margin-top:.3rem;accent-color:var(--terracotta);width:18px;height:18px">
+              <div><strong style="color:var(--charcoal);font-weight:500;display:block;margin-bottom:.2rem">Paiement à la livraison</strong><span style="font-size:.84rem;color:var(--muted)">Payez en espèces à la réception (Cap-Haïtien).</span></div>
+            </label>
+          </div>
+          <div style="background:linear-gradient(135deg,var(--terracotta),var(--terracotta-dark));color:#fff;border-radius:var(--radius);padding:2rem;margin-bottom:1.5rem;position:relative;overflow:hidden">
+            <h4 style="font-size:1.2rem;margin-bottom:.4rem;position:relative;font-family:'Fraunces',serif">💳 Numéro Natcash officiel</h4>
+            <div style="font-family:'Fraunces',serif;font-size:2.3rem;font-weight:700;letter-spacing:.06em;color:#FFE8D9;margin:.6rem 0 .3rem;position:relative" id="natNum"></div>
+            <p style="font-size:.85rem;opacity:.9;position:relative;font-weight:300">Fedoue Product — Cap-Haïtien. Envoyez toujours la capture de votre dépôt sur WhatsApp.</p>
+          </div>
+          <div class="field"><label>Notes / Instructions</label><textarea id="oNotes" placeholder="Instructions de livraison, allergies, préférences..."></textarea></div>
+          <button class="btn btn-wa" style="width:100%;padding:1.15rem" type="submit">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95-.26-.1-.45-.15-.64.15-.19.29-.74.94-.9 1.14-.17.19-.33.21-.62.07-.29-.15-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.5.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-.99.97-.99 2.36s1.01 2.74 1.15 2.93c.15.19 1.99 3.04 4.82 4.27.67.29 1.2.46 1.61.59.68.21 1.3.18 1.79.11.55-.08 1.69-.69 1.93-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34z"/><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.27 4.86L2 22l5.28-1.38A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            Confirmer et envoyer sur WhatsApp
+          </button>
+          <p class="help" style="text-align:center;margin-top:.9rem">En cliquant, WhatsApp s'ouvrira avec votre commande pré-remplie.</p>
+        </form>
+      </div>
+      <div class="summary" id="paySummary"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:1.3rem">
+          <span class="logo-mark">F</span>
+          <span class="logo-text">Fedoue<em>Product</em></span>
+        </div>
+        <p>Cosmétiques naturels, maquillage végan et soins capillaires formulés à Cap-Haïtien avec des ingrédients d'exception.</p>
+        <div class="footer-social">
+          <a href="#" id="ftWa1" target="_blank" title="WhatsApp"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 01-12.5 7.4L3 21l2.2-5.4A8.5 8.5 0 1121 11.5z"/></svg></a>
+          <a href="#" id="ftWa2" target="_blank" title="WhatsApp 2"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.4 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c.9.4 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg></a>
+          <a href="#" id="ftMail" title="Email"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Boutique</h4>
+        <a onclick="go('boutique')" style="display:block;cursor:pointer">Tous les produits</a>
+        <a onclick="goCat('Soins visage')" style="display:block;cursor:pointer">Soins visage</a>
+        <a onclick="goCat('Maquillage végan')" style="display:block;cursor:pointer">Maquillage végan</a>
+        <a onclick="goCat('Huiles capillaires')" style="display:block;cursor:pointer">Huiles capillaires</a>
+        <a onclick="goCat('Coffrets')" style="display:block;cursor:pointer">Coffrets cadeaux</a>
+      </div>
+      <div>
+        <h4>Aide</h4>
+        <a onclick="go('faq')" style="display:block;cursor:pointer">FAQ</a>
+        <a onclick="go('contact')" style="display:block;cursor:pointer">Contact</a>
+        <a onclick="openCart()" style="display:block;cursor:pointer">Mon panier</a>
+        <a onclick="go('apropos')" style="display:block;cursor:pointer">À propos</a>
+        <a onclick="go('blog')" style="display:block;cursor:pointer">Journal</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p id="ftAddr"></p>
+        <p><a href="#" id="ftWaLink1"></a></p>
+        <p><a href="#" id="ftWaLink2"></a></p>
+        <p>Natcash : <strong id="ftNat" style="color:var(--terracotta)"></strong></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Fedoue Product — Cap-Haïtien, Haïti. Tous droits réservés.</p>
+      <button class="admin-lock" onclick="openAdminLogin()" title="Espace administrateur">⚙</button>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOAT ============ -->
+<button class="wa-float" onclick="openWA('Bonjour Fedoue Product 🌸, je viens du site web.')" title="Discuter sur WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95-.26-.1-.45-.15-.64.15-.19.29-.74.94-.9 1.14-.17.19-.33.21-.62.07-.29-.15-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.5.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-.99.97-.99 2.36s1.01 2.74 1.15 2.93c.15.19 1.99 3.04 4.82 4.27.67.29 1.2.46 1.61.59.68.21 1.3.18 1.79.11.55-.08 1.69-.69 1.93-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34z"/><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.27 4.86L2 22l5.28-1.38A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18.2c-1.6 0-3.1-.43-4.4-1.19l-.32-.19-3.13.82.84-3.05-.2-.33A8.16 8.16 0 013.8 12c0-4.52 3.68-8.2 8.2-8.2s8.2 3.68 8.2 8.2-3.68 8.2-8.2 8.2z"/></svg>
+</button>
+
+<!-- ============ MODAL ============ -->
+<div class="overlay" id="overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal" id="modal"></div>
+</div>
+
+<!-- ============ ADMIN PANEL ============ -->
+<div class="admin-panel" id="adminPanel">
+  <div class="admin-top">
+    <div class="container">
+      <h2>⚙ Espace Administrateur</h2>
+      <div class="admin-tabs">
+        <button class="admin-tab on" onclick="adminTab('dashboard',this)">Tableau de bord</button>
+        <button class="admin-tab" onclick="adminTab('produits',this)">Produits</button>
+        <button class="admin-tab" onclick="adminTab('nouveau',this)">+ Nouveau</button>
+        <button class="admin-tab" onclick="adminTab('config',this)">Configuration</button>
+        <button class="admin-tab" onclick="adminTab('securite',this)">Sécurité</button>
+        <button class="admin-tab danger" onclick="closeAdmin()">✕ Fermer</button>
+      </div>
+    </div>
+  </div>
+  <div class="admin-body"><div class="container">
+    <div id="adminDashboard"></div>
+    <div id="adminProduits" style="display:none"></div>
+    <div id="adminNouveau" style="display:none"></div>
+    <div id="adminConfig" style="display:none"></div>
+    <div id="adminSecurite" style="display:none"></div>
+  </div></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============================================================
+   FEDOUE PRODUCT — Application refondue
+   ============================================================ */
+
+const DEFAULT_CONFIG = {
+  brand:"Fedoue Product",
+  whatsapp1:"50940751710",
+  whatsapp2:"50942032845",
+  natcash:"41620074",
+  address:"Cap-Haïtien, Haïti",
+  email:"kervensa319@gmail.com",
+  adminPass:"08032004"
+};
+
+const U = (id) => `https://images.unsplash.com/photo-${id}?w=800&q=80&auto=format&fit=crop`;
+
+const DEFAULT_PRODUCTS = [
+  {id:"p1",name:"Sérum Éclat Vitamine C",cat:"Soins visage",price:2500,old:3200,
+   img:U("1620916566398-39f1143ab7be"),badge:"Best-seller",rating:5,stock:24,
+   desc:"Un sérum concentré en vitamine C stabilisée qui illumine le teint, atténue les taches et booste la production de collagène.",
+   ing:"Vitamine C stabilisée 15%, acide hyaluronique, extrait de citron vert, aloe vera bio, glycérine végétale.",
+   use:"Le matin, appliquer 3-4 gouttes sur peau propre avant la crème hydratante. Éviter le contour des yeux. Toujours utiliser une protection solaire.",
+   skins:["Normale","Mixte","Grasse"],needs:["Éclat","Anti-âge","Protection"],pop:98},
+  {id:"p2",name:"Crème Hydratante Karité Bio",cat:"Soins visage",price:1800,old:0,
+   img:U("1612817288484-6f916006741a"),badge:"",rating:5,stock:40,
+   desc:"Une crème riche au beurre de karité brut qui nourrit intensément et restaure la barrière cutanée. Idéale pour les peaux sèches.",
+   ing:"Beurre de karité brut 20%, huile de coco vierge, glycérine végétale, vitamine E, extrait de calendula.",
+   use:"Matin et soir sur peau propre. Masser délicatement en mouvements circulaires ascendants.",
+   skins:["Sèche","Normale","Sensible"],needs:["Hydratation","Réparation"],pop:92},
+  {id:"p3",name:"Huile de Ricin Noire",cat:"Huiles capillaires",price:1200,old:0,
+   img:U("1583209814683-c023dd293cc6"),badge:"",rating:4,stock:55,
+   desc:"L'huile de ricin noire jamaïcaine, reconnue pour stimuler la pousse, épaissir les cheveux et réparer les pointes abîmées.",
+   ing:"Huile de ricin noire fermentée, huile de coco, huile d'olive, huile essentielle de menthe poivrée.",
+   use:"Appliquer sur le cuir chevelu 2x par semaine, masser 5 min, laisser agir 30 min ou toute la nuit, puis laver.",
+   skins:[],needs:["Croissance","Réparation","Hydratation"],pop:95},
+  {id:"p4",name:"Rouge à Lèvres Végan « Kreyòl »",cat:"Maquillage végan",price:950,old:1300,
+   img:U("1594035910387-fea47794261f"),badge:"Promo",rating:5,stock:32,
+   desc:"Un rouge à lèvres crémeux au fini satiné, 100% végan, longue tenue et enrichi en beurre de karité pour ne jamais dessécher.",
+   ing:"Beurre de karité, huile de jojoba, cire de candelilla (végane), pigments minéraux, vitamine E.",
+   use:"Appliquer directement sur les lèvres ou au pinceau pour un fini plus précis. Retoucher si besoin après le repas.",
+   skins:["Tous"],needs:["Éclat","Hydratation"],pop:88},
+  {id:"p5",name:"Masque Argile Rose",cat:"Soins visage",price:1400,old:0,
+   img:U("1596462502278-27bfdc403348"),badge:"",rating:4,stock:38,
+   desc:"Un masque purifiant à l'argile rose qui absorbe l'excès de sébum, resserre les pores et laisse la peau douce et nette.",
+   ing:"Argile rose, argile blanche kaolin, eau de rose, extrait de thé vert, huile essentielle de lavande.",
+   use:"Appliquer une couche uniforme sur peau propre, laisser 10-15 min sans laisser sécher complètement, rincer à l'eau tiède. 1-2x/semaine.",
+   skins:["Grasse","Mixte","Normale"],needs:["Anti-acné","Éclat","Réparation"],pop:85},
+  {id:"p6",name:"Huile de Coco Vierge",cat:"Huiles capillaires",price:1000,old:0,
+   img:U("1598440947619-2c35fc9aa908"),badge:"",rating:5,stock:60,
+   desc:"Huile de coco vierge pressée à froid, multi-usage : cheveux, peau et massage. Nourrit en profondeur sans effet gras.",
+   ing:"100% huile de coco vierge pressée à froid, non raffinée.",
+   use:"Cheveux : en masque avant-shampooing. Peau : quelques gouttes après la douche sur peau humide.",
+   skins:["Tous"],needs:["Hydratation","Réparation","Croissance"],pop:90},
+  {id:"p7",name:"Fond de Teint Naturel",cat:"Maquillage végan",price:2200,old:0,
+   img:U("1631730359585-38a4935cbec4"),badge:"Nouveau",rating:4,stock:18,
+   desc:"Un fond de teint fluide au fini naturel, couvrance modulable, enrichi en actifs hydratants. Disponible en 6 teintes.",
+   ing:"Eau florale de rose, pigments minéraux, squalane végétal, beurre de karité, vitamine E.",
+   use:"Appliquer au doigt, à l'éponge ou au pinceau en tapotant du centre vers l'extérieur du visage.",
+   skins:["Normale","Sèche","Mixte"],needs:["Hydratation","Protection"],pop:80},
+  {id:"p8",name:"Gommage Café & Sucre",cat:"Soins corps",price:1300,old:0,
+   img:U("1608248543803-ba4f8c70ae0b"),badge:"",rating:5,stock:45,
+   desc:"Un gommage exfoliant au marc de café et sucre roux qui élimine les cellules mortes et réveille l'éclat de la peau.",
+   ing:"Marc de café, sucre roux, huile de coco, huile d'amande douce, vanille naturelle.",
+   use:"Sur peau humide, masser en mouvements circulaires 3-5 min, rincer. 2x par semaine maximum.",
+   skins:["Tous"],needs:["Éclat","Réparation"],pop:87},
+  {id:"p9",name:"Beurre de Karité Brut",cat:"Soins corps",price:1500,old:0,
+   img:U("1556228720-195a672e8a03"),badge:"",rating:5,stock:50,
+   desc:"Beurre de karité 100% pur et non raffiné, pour nourrir intensément les peaux très sèches, les coudes, les talons et les lèvres.",
+   ing:"100% beurre de karité brut non raffiné, origine Haïti.",
+   use:"Chauffer une petite quantité entre les paumes puis masser sur les zones sèches. Utilisable quotidiennement.",
+   skins:["Sèche","Sensible","Normale"],needs:["Hydratation","Réparation","Protection"],pop:89},
+  {id:"p10",name:"Coffret Rituel Éclat",cat:"Coffrets",price:4500,old:5900,
+   img:U("1571781926291-c477ebfd024b"),badge:"Coffret",rating:5,stock:12,
+   desc:"Le rituel complet Fedoue : sérum vitamine C, masque argile rose, eau de rose tonique et gommage café. Le cadeau parfait.",
+   ing:"Voir la composition de chaque produit inclus dans le coffret.",
+   use:"Sérum le matin, masque 2x/semaine, gommage 1x/semaine, tonique matin et soir.",
+   skins:["Tous"],needs:["Éclat","Hydratation","Anti-âge"],pop:94},
+  {id:"p11",name:"Eau de Rose Tonique",cat:"Soins visage",price:1100,old:0,
+   img:U("1608248543803-ba4f8c70ae0b"),badge:"",rating:4,stock:42,
+   desc:"Une eau de rose pure qui tonifie, apaise et prépare la peau à recevoir ses soins. Idéale aussi en brume rafraîchissante.",
+   ing:"Eau de rose damascena pure, extrait d'hamamélis, glycérine végétale, conservateur naturel.",
+   use:"Après le nettoyage, vaporiser ou appliquer au coton sur le visage. Utiliser matin et soir.",
+   skins:["Tous"],needs:["Hydratation","Protection","Réparation"],pop:83},
+  {id:"p12",name:"Mascara Végan Volume",cat:"Maquillage végan",price:1250,old:0,
+   img:U("1512496015851-a90fb38ba796"),badge:"Nouveau",rating:4,stock:28,
+   desc:"Un mascara végan à la brosse sculptante qui démultiplie le volume et allonge le regard sans paquets.",
+   ing:"Cire de candelilla, huile de ricin, provitamine B5, pigments naturels. Formule végane.",
+   use:"Appliquer de la base des cils vers les pointes en zigzag. Renouveler pour plus d'intensité.",
+   skins:["Tous"],needs:["Éclat"],pop:78}
+];
+
+const DEFAULT_FAQ = [
+  {q:"Quels sont les délais de livraison ?",a:"À Cap-Haïtien, la livraison est assurée en 24h. Pour le reste du pays (Port-au-Prince, Gonaïves, Jacmel...), comptez 48h à 72h via nos partenaires transporteurs."},
+  {q:"Comment passer commande ?",a:"Ajoutez vos produits au panier, cliquez sur « Commander », remplissez le formulaire et votre commande nous parvient directement sur WhatsApp. Nous confirmons ensuite le stock et le paiement."},
+  {q:"Quels sont les modes de paiement acceptés ?",a:"Nous acceptons le dépôt Natcash (numéro officiel affiché sur le site), MonCash, et le paiement en espèces à la livraison pour Cap-Haïtien."},
+  {q:"Vos produits sont-ils vraiment naturels ?",a:"Oui. Nos formules sont à base d'ingrédients naturels — karité brut, huile de coco vierge, argile rose, huiles végétales pures. Sans parabènes, sans sulfates, sans silicones."},
+  {q:"Vos produits sont-ils testés sur les animaux ?",a:"Jamais. Fedoue Product est une marque cruelty-free et végane. Aucun de nos produits n'est testé sur les animaux."},
+  {q:"Puis-je retourner un produit ?",a:"Les produits non ouverts peuvent être échangés sous 7 jours. Les produits ouverts ne sont ni repris ni échangés pour des raisons d'hygiène. Contactez-nous sur WhatsApp en cas de problème."},
+  {q:"Mes produits conviennent-ils à une peau sensible ?",a:"La majorité de nos soins convient aux peaux sensibles. Filtrez par « Type de peau : Sensible » dans la boutique, et faites toujours un test sur une petite zone avant utilisation complète."},
+  {q:"Faites-vous des prix de gros / revente ?",a:"Oui ! Nous proposons des tarifs dégressifs à partir de 10 unités. Contactez-nous sur WhatsApp avec la mention « Revente » pour recevoir notre grille tarifaire."}
+];
+
+const DEFAULT_POSTS = [
+  {t:"Le rituel beauté du matin en 4 étapes",c:"Rituels",e:"Nettoyer, tonifier, sérum, hydrater. Découvrez pourquoi l'ordre compte et comment adapter ce rituel à votre type de peau.",img:U("1570172619644-dfd03ed5d881")},
+  {t:"Pourquoi l'huile de ricin noire fait repousser vos cheveux",c:"Cheveux",e:"Acides gras, stimulation du cuir chevelu, massage : on vous explique la science derrière cette huile légendaire.",img:U("1583209814683-c023dd293cc6")},
+  {t:"Reconnaître son type de peau (et arrêter de se tromper)",c:"Conseils",e:"Test du ruban, observation à midi, réaction aux produits : la méthode simple pour identifier votre peau en 5 minutes.",img:U("1556228720-195a672e8a03")},
+  {t:"5 erreurs qui abîment votre peau sans que vous le sachiez",c:"Conseils",e:"Trop exfolier, oublier le cou, dormir avec le maquillage... Corrigez ces habitudes dès aujourd'hui.",img:U("1596462502278-27bfdc403348")},
+  {t:"Le karité brut : l'or blanc d'Haïti",c:"Ingrédients",e:"Vertus, utilisation, conservation : tout savoir sur cet ingrédient ancestral qui nourrit les peaux les plus sèches.",img:U("1612817288484-6f916006741a")},
+  {t:"Maquillage végan : le guide complet",c:"Maquillage",e:"Comprendre les labels, éviter le greenwashing et choisir des produits réellement sans cruauté animale.",img:U("1594035910387-fea47794261f")}
+];
+
+let cfg = {}, products = [], cart = [], wishlist = [], faq = [], posts = [];
+let filters = {cat:"Tous", skin:"Tous", need:"Tous", sort:"pop"};
+let currentProduct = null, pdQty = 1, isAdmin = false, editingId = null;
+
+const LS = {
+  get(k,d){ try{ const v = localStorage.getItem("fedoue_"+k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
+  set(k,v){ try{ localStorage.setItem("fedoue_"+k, JSON.stringify(v)); }catch(e){ toast("Stockage plein","err"); } },
+  del(k){ try{ localStorage.removeItem("fedoue_"+k); }catch(e){} }
+};
+
+function money(n){ return Number(n).toLocaleString("fr-FR") + " HTG"; }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m])); }
+function svgWa(size){
+  return '<svg width="'+(size||18)+'" height="'+(size||18)+'" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95-.26-.1-.45-.15-.64.15-.19.29-.74.94-.9 1.14-.17.19-.33.21-.62.07-.29-.15-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.5.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-.99.97-.99 2.36s1.01 2.74 1.15 2.93c.15.19 1.99 3.04 4.82 4.27.67.29 1.2.46 1.61.59.68.21 1.3.18 1.79.11.55-.08 1.69-.69 1.93-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34z"/><path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.42 1.27 4.86L2 22l5.28-1.38A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>';
+}
+function placeholderFor(text){
+  const init = String(text||"FP").trim().split(/\s+/).map(w=>w[0]).slice(0,2).join("").toUpperCase();
+  const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="700" height="760"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F1E8DC"/><stop offset="1" stop-color="#E8C4C0"/></linearGradient></defs><rect width="700" height="760" fill="url(#g)"/><circle cx="350" cy="330" r="120" fill="none" stroke="#C67B5C" stroke-opacity="0.2" stroke-width="2"/><text x="350" y="360" font-family="Georgia,serif" font-size="96" fill="#C67B5C" fill-opacity="0.6" text-anchor="middle">'+init+'</text><text x="350" y="560" font-family="Georgia,serif" font-size="26" letter-spacing="6" fill="#5A4A3F" fill-opacity="0.4" text-anchor="middle">FEDOUE</text></svg>';
+  return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+}
+function imgHTML(src, alt, cls){
+  const fb = placeholderFor(alt);
+  const s = src && String(src).trim() ? src : fb;
+  return '<img src="'+esc(s)+'" alt="'+esc(alt)+'" class="'+(cls||"")+'" data-fb="'+esc(fb)+'" loading="lazy">';
+}
+function bindImgFallback(root){
+  (root||document).querySelectorAll("img[data-fb]").forEach(function(im){
+    if(im.dataset.bound) return; im.dataset.bound = "1";
+    im.addEventListener("error", function(){ im.src = im.dataset.fb; }, {once:true});
+  });
+}
+function toast(msg, type){
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.className = "toast on " + (type||"");
+  clearTimeout(t._tm);
+  t._tm = setTimeout(function(){ t.className = "toast " + (type||""); }, 3200);
+}
+function waLink(num, text){ return "https://wa.me/" + num + "?text=" + encodeURIComponent(text); }
+function openWA(text){ window.open(waLink(cfg.whatsapp1, text), "_blank"); }
+
+/* ---------- Initialisation ---------- */
+function init(){
+  cfg = Object.assign({}, DEFAULT_CONFIG, LS.get("config", {}));
+  products = LS.get("products", null) || DEFAULT_PRODUCTS.slice();
+  cart = LS.get("cart", []);
+  wishlist = LS.get("wishlist", []);
+  faq = LS.get("faq", null) || DEFAULT_FAQ.slice();
+  posts = LS.get("posts", null) || DEFAULT_POSTS.slice();
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  applyConfigToDOM();
+  renderHomeCats();
+  renderHomeGrid();
+  renderChips();
+  renderShop();
+  renderFAQ();
+  renderBlog();
+  renderCart();
+  updateCartCount();
+  updateWishCount();
+
+  document.getElementById("heroBg").style.backgroundImage = "url('" + U("1596462502278-27bfdc403348") + "')";
+  document.getElementById("homeAboutImg").src = U("1556228720-195a672e8a03");
+  document.getElementById("aboutImg1").src = U("1571781926291-c477ebfd024b");
+  document.getElementById("aboutImg2").src = U("1612817288484-6f916006741a");
+
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape"){ closeModal(); closeSearch(); closeCart(); }
+  });
+  bindImgFallback();
+}
+
+function applyConfigToDOM(){
+  document.title = cfg.brand + " — Beauté naturelle · Cap-Haïtien";
+  const n1 = "+" + cfg.whatsapp1, n2 = "+" + cfg.whatsapp2;
+  const wa1 = waLink(cfg.whatsapp1, "Bonjour Fedoue Product 🌸");
+  const wa2 = waLink(cfg.whatsapp2, "Bonjour Fedoue Product 🌸");
+  const set = function(id, txt){ const el = document.getElementById(id); if(el) el.textContent = txt; };
+  const setHref = function(id, href, txt){ const el = document.getElementById(id); if(el){ el.href = href; if(txt!==undefined) el.textContent = txt; } };
+  set("ctWa1", n1); set("ctWa2", n2); set("ctAddr", cfg.address);
+  set("ctMail", cfg.email); set("ctNat", cfg.natcash);
+  setHref("ctWa1", wa1); setHref("ctWa2", wa2);
+  setHref("ctMail", "mailto:" + cfg.email);
+  setHref("ftWa1", wa1); setHref("ftWa2", wa2);
+  setHref("ftMail", "mailto:" + cfg.email);
+  setHref("ftWaLink1", wa1, n1); setHref("ftWaLink2", wa2, n2);
+  set("ftAddr", cfg.address); set("ftNat", cfg.natcash);
+  set("natInline", cfg.natcash); set("natNum", cfg.natcash);
+}
+
+/* ---------- Navigation ---------- */
+function go(page){
+  document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+  const el = document.getElementById("page-" + page);
+  if(el) el.classList.add("active");
+  document.querySelectorAll(".nav a").forEach(a => a.classList.toggle("active", a.dataset.p === page));
+  document.getElementById("nav").classList.remove("on");
+  window.scrollTo({top:0, behavior:"smooth"});
+  if(page === "paiement") renderPaySummary();
+}
+function goCat(cat){
+  filters.cat = cat;
+  filters.skin = "Tous"; filters.need = "Tous";
+  document.getElementById("fSkin").value = "Tous";
+  document.getElementById("fNeed").value = "Tous";
+  renderChips(); renderShop();
+  go("boutique");
+}
+
+/* ---------- Accueil ---------- */
+function renderHomeCats(){
+  const cats = ["Soins visage","Maquillage végan","Huiles capillaires","Soins corps","Coffrets"];
+  const imgMap = {
+    "Soins visage": U("1620916566398-39f1143ab7be"),
+    "Maquillage végan": U("1594035910387-fea47794261f"),
+    "Huiles capillaires": U("1583209814683-c023dd293cc6"),
+    "Soins corps": U("1556228720-195a672e8a03"),
+    "Coffrets": U("1571781926291-c477ebfd024b")
+  };
+  const el = document.getElementById("homeCats");
+  el.innerHTML = cats.map(function(c){
+    const n = products.filter(p => p.cat === c).length;
+    return '<div class="cat-card" onclick="goCat(\'' + c.replace(/'/g,"\\'") + '\')">'
+      + '<div class="cat-thumb">' + imgHTML(imgMap[c] || "", c) + '</div>'
+      + '<h4>' + esc(c) + '</h4><span>' + n + ' produits</span></div>';
+  }).join("");
+  bindImgFallback(el);
+}
+function renderHomeGrid(){
+  const best = products.slice().sort((a,b) => (b.pop||0)-(a.pop||0)).slice(0,8);
+  const el = document.getElementById("homeGrid");
+  el.innerHTML = best.map(cardHTML).join("");
+  bindImgFallback(el);
+}
+
+/* ---------- Carte produit ---------- */
+function cardHTML(p){
+  const out = p.stock === 0;
+  const inWish = wishlist.includes(p.id);
+  const badgeClass = p.badge === "Nouveau" ? "new" : p.badge === "Promo" ? "promo" : p.badge === "Best-seller" ? "bestseller" : "";
+  return '<article class="card">'
+    + '<div class="card-media" onclick="openProduct(\'' + p.id + '\')">'
+    + (p.badge ? '<span class="badge ' + badgeClass + '">' + esc(p.badge) + '</span>' : '')
+    + '<button class="wish-btn' + (inWish ? ' on' : '') + '" onclick="event.stopPropagation();toggleWish(\'' + p.id + '\',this)" title="Ajouter aux favoris">'
+    + '<svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 00-7.8 7.8l1.1 1L12 21.2l7.7-7.8 1.1-1a5.5 5.5 0 000-7.8z"/></svg></button>'
+    + imgHTML(p.img, p.name)
+    + '<div class="card-quick">'
+    + '<button class="q-add" onclick="event.stopPropagation();addToCart(\'' + p.id + '\',1)">' + (out ? "Épuisé" : "Ajouter") + '</button>'
+    + '<button class="q-view" onclick="event.stopPropagation();openProduct(\'' + p.id + '\')">Détails</button>'
+    + '</div></div>'
+    + '<div class="card-body">'
+    + '<div class="card-cat">' + esc(p.cat) + '</div>'
+    + '<h3 class="card-title" onclick="openProduct(\'' + p.id + '\')">' + esc(p.name) + '</h3>'
+    + '<p class="card-desc">' + esc(p.desc) + '</p>'
+    + '<div class="stars">' + "★".repeat(p.rating||5) + "☆".repeat(5-(p.rating||5)) + '</div>'
+    + '<div class="card-foot" style="margin-top:.7rem">'
+    + '<div class="price">' + money(p.price) + (p.old && p.old > p.price ? '<span class="price-old">' + money(p.old) + '</span>' : '') + '</div>'
+    + '<button class="btn btn-primary btn-sm" onclick="addToCart(\'' + p.id + '\',1)" ' + (out?"disabled":"") + '>' + (out?"Épuisé":"+ Panier") + '</button>'
+    + '</div></div></article>';
+}
+
+/* ---------- Boutique ---------- */
+function renderChips(){
+  const cats = ["Tous"].concat(Array.from(new Set(products.map(p => p.cat))));
+  const el = document.getElementById("catChips");
+  el.innerHTML = cats.map(c =>
+    '<button class="chip' + (filters.cat === c ? " active" : "") + '" onclick="setCat(\'' + c.replace(/'/g,"\\'") + '\')">' + esc(c) + '</button>'
+  ).join("");
+}
+function setCat(c){ filters.cat = c; renderChips(); renderShop(); }
+function resetFilters(){
+  filters = {cat:"Tous", skin:"Tous", need:"Tous", sort:"pop"};
+  document.getElementById("fSkin").value = "Tous";
+  document.getElementById("fNeed").value = "Tous";
+  document.getElementById("fSort").value = "pop";
+  renderChips(); renderShop();
+}
+function applyFilters(){
+  filters.skin = document.getElementById("fSkin").value;
+  filters.need = document.getElementById("fNeed").value;
+  filters.sort = document.getElementById("fSort").value;
+  renderShop();
+}
+function renderShop(){
+  let list = products.slice();
+  if(filters.cat !== "Tous") list = list.filter(p => p.cat === filters.cat);
+  if(filters.skin !== "Tous") list = list.filter(p => (p.skins||[]).indexOf(filters.skin) > -1);
+  if(filters.need !== "Tous") list = list.filter(p => (p.needs||[]).indexOf(filters.need) > -1);
+  const sort = filters.sort || "pop";
+  if(sort === "asc") list.sort((a,b) => a.price - b.price);
+  else if(sort === "desc") list.sort((a,b) => b.price - a.price);
+  else if(sort === "new") list.sort((a,b) => (b.badge==="Nouveau"?1:0) - (a.badge==="Nouveau"?1:0));
+  else list.sort((a,b) => (b.pop||0) - (a.pop||0));
+
+  const grid = document.getElementById("shopGrid");
+  grid.innerHTML = list.map(cardHTML).join("");
+  document.getElementById("shopEmpty").style.display = list.length ? "none" : "block";
+  bindImgFallback(grid);
+}
+
+/* ---------- Wishlist ---------- */
+function toggleWish(id, btn){
+  const i = wishlist.indexOf(id);
+  if(i > -1){ wishlist.splice(i,1); toast("Retiré des favoris"); }
+  else { wishlist.push(id); toast("Ajouté aux favoris ♥", "ok"); }
+  LS.set("wishlist", wishlist);
+  updateWishCount();
+  if(btn){ btn.classList.toggle("on"); }
+  else {
+    document.querySelectorAll(".wish-btn").forEach(function(b){
+      const card = b.closest(".card");
+      const title = card && card.querySelector(".card-title");
+      const pid = title && title.getAttribute("onclick").match(/'([^']+)'/);
+      if(pid && pid[1] === id) b.classList.toggle("on");
+    });
+  }
+}
+function updateWishCount(){
+  const el = document.getElementById("wishCount");
+  el.textContent = wishlist.length;
+  el.classList.toggle("on", wishlist.length > 0);
+}
+function toggleWishlistView(){
+  if(wishlist.length === 0){ toast("Aucun favori pour le moment"); return; }
+  const items = wishlist.map(id => products.find(p => p.id === id)).filter(Boolean);
+  const html = '<button class="modal-x" onclick="closeModal()">×</button>'
+    + '<h3>♥ Mes favoris (' + items.length + ')</h3>'
+    + '<p style="color:var(--muted);font-size:.9rem;font-weight:300;margin-bottom:1.5rem">Vos produits coups de cœur, prêts à être commandés.</p>'
+    + items.map(p =>
+      '<div class="search-result" onclick="closeModal();openProduct(\'' + p.id + '\')">'
+      + imgHTML(p.img, p.name)
+      + '<div><div class="sr-cat">' + esc(p.cat) + '</div><div class="sr-name">' + esc(p.name) + '</div></div>'
+      + '<div class="sr-price">' + money(p.price) + '</div></div>'
+    ).join("");
+  openModal(html);
+  bindImgFallback(document.getElementById("modal"));
+}
+
+/* ---------- Recherche live ---------- */
+function openSearch(){
+  document.getElementById("searchOverlay").classList.add("on");
+  document.body.style.overflow = "hidden";
+  setTimeout(() => document.getElementById("liveSearch").focus(), 80);
+}
+function closeSearch(){
+  document.getElementById("searchOverlay").classList.remove("on");
+  document.body.style.overflow = "";
+  document.getElementById("liveSearch").value = "";
+  document.getElementById("searchResults").innerHTML = "";
+  document.getElementById("searchHint").style.display = "block";
+}
+function runLiveSearch(){
+  const q = document.getElementById("liveSearch").value.toLowerCase().trim();
+  const hint = document.getElementById("searchHint");
+  const res = document.getElementById("searchResults");
+  if(!q){ res.innerHTML = ""; hint.style.display = "block"; return; }
+  hint.style.display = "none";
+  const found = products.filter(p =>
+    (p.name + " " + p.desc + " " + p.cat + " " + (p.ing||"")).toLowerCase().indexOf(q) > -1
+  ).slice(0, 8);
+  if(found.length === 0){
+    res.innerHTML = '<div class="search-empty">Aucun résultat pour « ' + esc(q) + ' »</div>';
+    return;
+  }
+  res.innerHTML = found.map(p =>
+    '<div class="search-result" onclick="closeSearch();openProduct(\'' + p.id + '\')">'
+    + imgHTML(p.img, p.name)
+    + '<div><div class="sr-cat">' + esc(p.cat) + '</div><div class="sr-name">' + esc(p.name) + '</div></div>'
+    + '<div class="sr-price">' + money(p.price) + '</div></div>'
+  ).join("");
+  bindImgFallback(res);
+}
+
+/* ---------- Fiche produit ---------- */
+function openProduct(id){
+  const p = products.find(x => x.id === id);
+  if(!p) return;
+  currentProduct = p; pdQty = 1;
+  renderProduct();
+  go("produit");
+}
+function renderProduct(){
+  const p = currentProduct; if(!p) return;
+  const out = p.stock === 0;
+  const inWish = wishlist.includes(p.id);
+  const el = document.getElementById("pdContent");
+  el.innerHTML = '<div class="pd-grid">'
+    + '<div><div class="pd-media">' + imgHTML(p.img, p.name) + '</div></div>'
+    + '<div class="pd-info">'
+    + '<div class="card-cat">' + esc(p.cat) + '</div>'
+    + '<h1>' + esc(p.name) + '</h1>'
+    + '<div class="stars">' + "★".repeat(p.rating||5) + "☆".repeat(5-(p.rating||5)) + ' <span style="color:var(--muted);font-size:.85rem;margin-left:.5rem">(' + (p.pop||50) + ' avis)</span></div>'
+    + '<div class="pd-price">' + money(p.price) + (p.old && p.old > p.price ? '<span class="price-old">' + money(p.old) + '</span>' : '') + '<small>Taxes incluses · Livraison 24h Cap-Haïtien</small></div>'
+    + '<p class="pd-desc">' + esc(p.desc) + '</p>'
+    + '<div class="tags">'
+    + (p.skins||[]).map(s => '<span class="tag">Peau ' + esc(s) + '</span>').join("")
+    + (p.needs||[]).map(n => '<span class="tag">' + esc(n) + '</span>').join("")
+    + '<span class="tag ' + (out ? "stock-out" : "stock-in") + '">' + (out ? "Rupture de stock" : "En stock : " + p.stock) + '</span>'
+    + '</div>'
+    + '<div class="pd-actions">'
+    + '<div class="qty"><button onclick="pdQtyChange(-1)">−</button><span id="pdQty">1</span><button onclick="pdQtyChange(1)">+</button></div>'
+    + '<button class="btn btn-primary" onclick="addToCart(\'' + p.id + '\', pdQty)" ' + (out?"disabled":"") + '>' + (out ? "Épuisé" : "Ajouter au panier") + '</button>'
+    + '<button class="btn btn-outline" onclick="toggleWish(\'' + p.id + '\')" title="Favoris" style="padding:1rem 1.2rem">' + (inWish ? "♥" : "♡") + '</button>'
+    + '<button class="btn btn-wa" onclick="orderProductDirect()">' + svgWa(17) + ' Commander via WhatsApp</button>'
+    + '</div>'
+    + '<div class="accordion">'
+    + accItem("Ingrédients", esc(p.ing || "Information non disponible."))
+    + accItem("Conseils d'utilisation", esc(p.use || "Information non disponible."))
+    + accItem("Livraison & Retours", "Livraison en 24h à Cap-Haïtien, 48-72h dans le reste du pays. Produits non ouverts échangeables sous 7 jours.")
+    + accItem("Paiement", "Dépôt Natcash au <strong>" + esc(cfg.natcash) + "</strong>, MonCash, ou espèces à la livraison (Cap-Haïtien).")
+    + '</div></div></div>';
+
+  bindImgFallback(el);
+  el.querySelectorAll(".acc-head").forEach(function(h){
+    h.addEventListener("click", function(){
+      const item = h.parentElement;
+      const body = item.querySelector(".acc-body");
+      const open = item.classList.contains("open");
+      el.querySelectorAll(".acc-item").forEach(function(i){
+        i.classList.remove("open");
+        i.querySelector(".acc-body").style.maxHeight = null;
+      });
+      if(!open){ item.classList.add("open"); body.style.maxHeight = body.scrollHeight + "px"; }
+    });
+  });
+}
+function accItem(title, body){
+  return '<div class="acc-item"><button class="acc-head">' + esc(title) + '<span class="plus">+</span></button>'
+    + '<div class="acc-body"><div>' + body + '</div></div></div>';
+}
+function pdQtyChange(d){
+  pdQty = Math.max(1, Math.min(99, pdQty + d));
+  const el = document.getElementById("pdQty");
+  if(el) el.textContent = pdQty;
+}
+function orderProductDirect(){
+  if(!currentProduct) return;
+  openProductForm(currentProduct, pdQty);
+}
+
+/* ---------- Formulaire produit → WhatsApp ---------- */
+function openProductForm(p, qty){
+  const total = p.price * qty;
+  const html = '<button class="modal-x" onclick="closeModal()">×</button>'
+    + '<h3>Commander ce produit</h3>'
+    + '<p style="color:var(--muted);font-size:.9rem;font-weight:300;margin-bottom:1.6rem">Remplissez le formulaire, votre commande sera envoyée directement sur WhatsApp.</p>'
+    + '<div style="display:flex;gap:1rem;align-items:center;padding:1rem;background:var(--sand);border-radius:var(--radius-sm);margin-bottom:1.8rem">'
+    + '<div style="width:64px;height:74px;border-radius:10px;overflow:hidden;flex-shrink:0">' + imgHTML(p.img, p.name) + '</div>'
+    + '<div style="flex:1"><div style="font-family:Fraunces,serif;font-size:1.15rem;color:var(--charcoal);font-weight:600">' + esc(p.name) + '</div>'
+    + '<div style="font-size:.84rem;color:var(--muted)">' + esc(p.cat) + ' · Qté ' + qty + '</div></div>'
+    + '<div style="font-family:Fraunces,serif;font-size:1.35rem;font-weight:700;color:var(--terracotta)">' + money(total) + '</div>'
+    + '</div>'
+    + '<form onsubmit="submitProductForm(event)">'
+    + '<input type="hidden" id="pfId" value="' + p.id + '">'
+    + '<input type="hidden" id="pfQty" value="' + qty + '">'
+    + '<div class="field-row">'
+    + '<div class="field"><label>Nom complet *</label><input required id="pfName" placeholder="Votre nom"></div>'
+    + '<div class="field"><label>Téléphone / WhatsApp *</label><input required id="pfPhone" placeholder="+509 ..."></div>'
+    + '</div>'
+    + '<div class="field-row">'
+    + '<div class="field"><label>Ville / Commune *</label><input required id="pfCity" placeholder="Cap-Haïtien"></div>'
+    + '<div class="field"><label>Adresse *</label><input required id="pfAddr" placeholder="Rue, quartier, repère"></div>'
+    + '</div>'
+    + '<div class="field"><label>Mode de paiement</label><select id="pfPay">'
+    + '<option>Natcash (' + esc(cfg.natcash) + ')</option><option>MonCash</option><option>Paiement à la livraison</option>'
+    + '</select></div>'
+    + '<div class="field"><label>Notes / Instructions</label><textarea id="pfNotes" placeholder="Allergies, préférences, heure de livraison..."></textarea></div>'
+    + '<button class="btn btn-wa" style="width:100%" type="submit">' + svgWa(18) + ' Envoyer ma commande sur WhatsApp</button>'
+    + '</form>';
+  openModal(html);
+  bindImgFallback(document.getElementById("modal"));
+}
+function submitProductForm(e){
+  e.preventDefault();
+  const p = products.find(x => x.id === document.getElementById("pfId").value);
+  if(!p) return;
+  const qty = parseInt(document.getElementById("pfQty").value) || 1;
+  const total = p.price * qty;
+  const name = document.getElementById("pfName").value.trim();
+  const phone = document.getElementById("pfPhone").value.trim();
+  const city = document.getElementById("pfCity").value.trim();
+  const addr = document.getElementById("pfAddr").value.trim();
+  const pay = document.getElementById("pfPay").value;
+  const notes = document.getElementById("pfNotes").value.trim();
+
+  const msg = buildOrderMessage({
+    items:[{name:p.name, cat:p.cat, qty:qty, price:p.price}],
+    total:total, name:name, phone:phone, city:city, addr:addr,
+    pay:pay, notes:notes, single:true
+  });
+  window.open(waLink(cfg.whatsapp1, msg), "_blank");
+  closeModal();
+  toast("Commande envoyée sur WhatsApp ✅","ok");
+}
+
+/* ---------- Message WhatsApp structuré ---------- */
+function buildOrderMessage(d){
+  const now = new Date();
+  const dateStr = now.toLocaleDateString("fr-FR") + " à " + now.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"});
+  const ref = "FP-" + now.getFullYear() + String(now.getMonth()+1).padStart(2,"0") + String(now.getDate()).padStart(2,"0") + "-" + Math.floor(Math.random()*9000+1000);
+
+  let m = "";
+  m += "🌸 *NOUVELLE COMMANDE — FEDOUE PRODUCT* 🌸\n";
+  m += "━━━━━━━━━━━━━━━━━━━━━━\n";
+  m += "📅 " + dateStr + "\n";
+  m += "🔖 Réf : *" + ref + "*\n";
+  m += "━━━━━━━━━━━━━━━━━━━━━━\n\n";
+  m += "👤 *CLIENT*\n";
+  m += "• Nom : " + d.name + "\n";
+  m += "• Téléphone : " + d.phone + "\n";
+  m += "• Ville : " + d.city + "\n";
+  m += "• Adresse : " + d.addr + "\n";
+  if(d.email) m += "• Email : " + d.email + "\n";
+  m += "\n🛍 *PRODUITS COMMANDÉS*\n";
+  m += "━━━━━━━━━━━━━━━━━━━━━━\n";
+  d.items.forEach(function(it, i){
+    m += (i+1) + ". *" + it.name + "*\n";
+    m += "   Catégorie : " + (it.cat||"—") + "\n";
+    m += "   Quantité : " + it.qty + " × " + money(it.price) + "\n";
+    m += "   Sous-total : *" + money(it.price * it.qty) + "*\n\n";
+  });
+  m += "━━━━━━━━━━━━━━━━━━━━━━\n";
+  m += "💰 *TOTAL : " + money(d.total) + "*\n";
+  m += "━━━━━━━━━━━━━━━━━━━━━━\n\n";
+  m += "💳 *PAIEMENT*\n";
+  m += "• Méthode : " + d.pay + "\n";
+  if(d.pay.indexOf("Natcash") > -1){
+    m += "• Numéro Natcash : *" + cfg.natcash + "*\n";
+    m += "• ⚠️ Envoyez la capture du dépôt après ce message.\n";
+  }
+  m += "\n";
+  if(d.notes){ m += "📝 *NOTES DU CLIENT*\n" + d.notes + "\n\n"; }
+  m += "📍 *LIVRAISON*\n";
+  m += "Fedoue Product — " + cfg.address + "\n\n";
+  m += "✅ Merci de confirmer la commande et le délai de livraison.\n";
+  m += "— Envoyé depuis le site web Fedoue Product";
+  return m;
+}
+
+/* ---------- Panier ---------- */
+function addToCart(id, qty){
+  const p = products.find(x => x.id === id);
+  if(!p) return;
+  if(p.stock === 0){ toast("Produit en rupture de stock","err"); return; }
+  qty = parseInt(qty) || 1;
+  const existing = cart.find(c => c.id === id);
+  if(existing){ existing.qty = Math.min(existing.qty + qty, p.stock); }
+  else { cart.push({id:id, qty:Math.min(qty, p.stock)}); }
+  saveCart();
+  updateCartCount();
+  toast("✓ Ajouté au panier", "ok");
+  if(document.getElementById("cartDrawer").classList.contains("on")) renderCart();
+}
+function removeFromCart(id){
+  cart = cart.filter(c => c.id !== id);
+  saveCart(); updateCartCount(); renderCart();
+}
+function setCartQty(id, qty){
+  const p = products.find(x => x.id === id);
+  if(!p) return;
+  qty = Math.max(1, Math.min(parseInt(qty)||1, p.stock));
+  const it = cart.find(c => c.id === id);
+  if(it) it.qty = qty;
+  saveCart(); updateCartCount(); renderCart();
+}
+function saveCart(){ LS.set("cart", cart); }
+function updateCartCount(){
+  const n = cart.reduce((s,c) => s + c.qty, 0);
+  const el = document.getElementById("cartCount");
+  el.textContent = n;
+  el.classList.toggle("on", n > 0);
+}
+function cartDetailed(){
+  return cart.map(c => {
+    const p = products.find(x => x.id === c.id);
+    return p ? {id:c.id, qty:c.qty, p:p, subtotal:p.price * c.qty} : null;
+  }).filter(Boolean);
+}
+function cartTotal(){ return cartDetailed().reduce((s,i) => s + i.subtotal, 0); }
+
+function openCart(){
+  renderCart();
+  document.getElementById("cartDrawer").classList.add("on");
+  document.getElementById("cartOverlay").classList.add("on");
+  document.body.style.overflow = "hidden";
+}
+function closeCart(){
+  document.getElementById("cartDrawer").classList.remove("on");
+  document.getElementById("cartOverlay").classList.remove("on");
+  document.body.style.overflow = "";
+}
+function renderCart(){
+  const items = cartDetailed();
+  const body = document.getElementById("cartDrawerBody");
+  const foot = document.getElementById("cartDrawerFoot");
+
+  if(items.length === 0){
+    body.innerHTML = '<div class="cart-empty">'
+      + '<svg viewBox="0 0 24 24"><path d="M3 6h18l-1.5 12.5a2 2 0 01-2 1.5H6.5a2 2 0 01-2-1.5L3 6z"/><path d="M9 10v5M15 10v5"/><path d="M6 2l1.5 3M18 2l-1.5 3"/></svg>'
+      + '<p style="font-family:Fraunces,serif;font-size:1.3rem;color:var(--charcoal);margin-bottom:.5rem">Votre panier est vide</p>'
+      + '<p style="font-size:.88rem">Découvrez nos soins naturels.</p>'
+      + '</div>';
+    foot.innerHTML = '<button class="btn btn-primary" style="width:100%" onclick="closeCart();go(\'boutique\')">Découvrir la boutique</button>';
+    return;
+  }
+
+  body.innerHTML = items.map(function(it){
+    return '<div class="cart-item">'
+      + '<div onclick="closeCart();openProduct(\'' + it.id + '\')" style="cursor:pointer">' + imgHTML(it.p.img, it.p.name) + '</div>'
+      + '<div>'
+      + '<div class="ci-cat">' + esc(it.p.cat) + '</div>'
+      + '<h4>' + esc(it.p.name) + '</h4>'
+      + '<div style="font-size:.85rem;color:var(--muted);margin-bottom:.4rem">' + money(it.p.price) + ' / unité</div>'
+      + '<div class="cart-qty"><button onclick="setCartQty(\'' + it.id + '\',' + (it.qty-1) + ')">−</button><span>' + it.qty + '</span><button onclick="setCartQty(\'' + it.id + '\',' + (it.qty+1) + ')">+</button></div>'
+      + '</div>'
+      + '<div style="text-align:right">'
+      + '<div style="font-family:Fraunces,serif;font-weight:700;color:var(--terracotta);font-size:1.15rem">' + money(it.subtotal) + '</div>'
+      + '<button class="remove" onclick="removeFromCart(\'' + it.id + '\')" title="Retirer">×</button>'
+      + '</div></div>';
+  }).join("");
+  bindImgFallback(body);
+
+  const total = cartTotal();
+  const shipping = total >= 5000 ? 0 : 250;
+  foot.innerHTML = '<div class="sum-row"><span>Sous-total</span><span>' + money(total) + '</span></div>'
+    + '<div class="sum-row"><span>Livraison</span><span>' + (shipping===0 ? "Offerte" : money(shipping)) + '</span></div>'
+    + (shipping > 0 ? '<div class="help">Livraison offerte dès 5 000 HTG.</div>' : '')
+    + '<div class="sum-row total"><span>Total</span><span>' + money(total + shipping) + '</span></div>'
+    + '<button class="btn btn-primary" style="width:100%;margin-top:1.2rem" onclick="closeCart();go(\'paiement\')">Commander</button>'
+    + '<button class="btn btn-wa" style="width:100%;margin-top:.6rem" onclick="cartToWA()">' + svgWa(17) + ' Envoyer sur WhatsApp</button>';
+}
+function cartToWA(){
+  const items = cartDetailed();
+  if(items.length === 0){ toast("Votre panier est vide","err"); return; }
+  const total = cartTotal();
+  let m = "🌸 *PANIER — FEDOUE PRODUCT* 🌸\n━━━━━━━━━━━━━━━━━━━━━━\n\n";
+  m += "🛍 *Articles :*\n";
+  items.forEach(function(it, i){
+    m += (i+1) + ". " + it.p.name + "\n   " + it.qty + " × " + money(it.p.price) + " = *" + money(it.subtotal) + "*\n";
+  });
+  m += "\n━━━━━━━━━━━━━━━━━━━━━━\n💰 *Total : " + money(total) + "*\n\n";
+  m += "Je souhaite finaliser cette commande. Merci de m'indiquer la marche à suivre pour le paiement Natcash (" + cfg.natcash + ").";
+  window.open(waLink(cfg.whatsapp1, m), "_blank");
+}
+
+/* ---------- Paiement ---------- */
+function selPay(input){
+  document.querySelectorAll(".pay-opt").forEach(o => o.style.borderColor = "var(--line)");
+  input.closest(".pay-opt").style.borderColor = "var(--terracotta)";
+  input.closest(".pay-opt").style.boxShadow = "0 0 0 4px rgba(198,123,92,.1)";
+  document.querySelectorAll(".pay-opt").forEach(function(o){
+    if(o !== input.closest(".pay-opt")) o.style.boxShadow = "none";
+  });
+}
+function renderPaySummary(){
+  const items = cartDetailed();
+  const sum = document.getElementById("paySummary");
+  if(items.length === 0){
+    sum.innerHTML = '<h3>Votre commande</h3><p style="color:var(--muted);font-weight:300;font-size:.92rem">Votre panier est vide.</p>'
+      + '<button class="btn btn-primary" style="width:100%;margin-top:1.3rem" onclick="go(\'boutique\')">Voir la boutique</button>';
+    return;
+  }
+  const total = cartTotal();
+  const shipping = total >= 5000 ? 0 : 250;
+  sum.innerHTML = '<h3>Votre commande</h3>'
+    + items.map(it => '<div class="sum-row"><span>' + esc(it.p.name) + ' <span style="color:var(--terracotta)">× ' + it.qty + '</span></span><span>' + money(it.subtotal) + '</span></div>').join("")
+    + '<div class="sum-row" style="border-top:1px solid var(--line);margin-top:.7rem;padding-top:1rem"><span>Sous-total</span><span>' + money(total) + '</span></div>'
+    + '<div class="sum-row"><span>Livraison</span><span>' + (shipping===0 ? "Offerte" : money(shipping)) + '</span></div>'
+    + '<div class="sum-row total"><span>Total</span><span>' + money(total + shipping) + '</span></div>'
+    + '<div style="background:linear-gradient(135deg,var(--terracotta),var(--terracotta-dark));color:#fff;border-radius:var(--radius);padding:1.6rem;margin-top:1.5rem">'
+    + '<div style="font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;opacity:.85;margin-bottom:.4rem">Paiement Natcash</div>'
+    + '<div style="font-family:Fraunces,serif;font-size:1.9rem;font-weight:700;letter-spacing:.06em">' + esc(cfg.natcash) + '</div>'
+    + '</div>';
+}
+function submitOrder(e){
+  e.preventDefault();
+  const items = cartDetailed();
+  if(items.length === 0){ toast("Votre panier est vide","err"); return; }
+
+  const name = document.getElementById("oName").value.trim();
+  const phone = document.getElementById("oPhone").value.trim();
+  const city = document.getElementById("oCity").value.trim();
+  const addr = document.getElementById("oAddr").value.trim();
+  const email = document.getElementById("oMail").value.trim();
+  const notes = document.getElementById("oNotes").value.trim();
+  const pay = (document.querySelector('input[name="pay"]:checked')||{}).value || "Natcash";
+
+  const total = cartTotal();
+  const shipping = total >= 5000 ? 0 : 250;
+  const grand = total + shipping;
+
+  const msg = buildOrderMessage({
+    items: items.map(it => ({name:it.p.name, cat:it.p.cat, qty:it.qty, price:it.p.price})),
+    total: grand, name:name, phone:phone, city:city, addr:addr,
+    email:email, pay:pay, notes:notes, single:false
+  });
+
+  window.open(waLink(cfg.whatsapp1, msg), "_blank");
+  toast("Commande envoyée ✅ Nous vous répondons rapidement.","ok");
+}
+
+/* ---------- FAQ ---------- */
+function renderFAQ(){
+  const el = document.getElementById("faqList");
+  el.innerHTML = faq.map(function(f, i){
+    return '<div class="faq-item"><button class="faq-q" onclick="toggleFaq(' + i + ', this)">'
+      + esc(f.q) + '<span class="plus">+</span></button>'
+      + '<div class="faq-a"><p>' + esc(f.a) + '</p></div></div>';
+  }).join("");
+}
+function toggleFaq(i, btn){
+  const item = btn.parentElement;
+  const body = item.querySelector(".faq-a");
+  const open = item.classList.contains("open");
+  document.querySelectorAll("#faqList .faq-item").forEach(function(it){
+    it.classList.remove("open");
+    it.querySelector(".faq-a").style.maxHeight = null;
+  });
+  if(!open){ item.classList.add("open"); body.style.maxHeight = body.scrollHeight + "px"; }
+}
+
+/* ---------- Blog ---------- */
+function renderBlog(){
+  const el = document.getElementById("blogGrid");
+  el.innerHTML = posts.map(p =>
+    '<article class="post" onclick="openPost(\'' + esc(p.t).replace(/'/g,"\\'") + '\')">'
+    + '<div class="post-media">' + imgHTML(p.img, p.t) + '</div>'
+    + '<div class="post-body"><div class="post-meta">' + esc(p.c) + '</div>'
+    + '<h3>' + esc(p.t) + '</h3><p>' + esc(p.e) + '</p></div></article>'
+  ).join("");
+  bindImgFallback(el);
+}
+function openPost(title){
+  const p = posts.find(x => x.t === title);
+  if(!p) return;
+  const html = '<button class="modal-x" onclick="closeModal()">×</button>'
+    + '<div style="border-radius:var(--radius-sm);overflow:hidden;margin-bottom:1.4rem">' + imgHTML(p.img, p.t) + '</div>'
+    + '<div class="post-meta">' + esc(p.c) + '</div>'
+    + '<h3>' + esc(p.t) + '</h3>'
+    + '<p style="color:var(--muted);font-weight:300;margin-top:1.1rem;line-height:1.8">' + esc(p.e) + '</p>'
+    + '<p style="color:var(--muted);font-weight:300;margin-top:1.1rem;line-height:1.8">Pour aller plus loin, explorez nos produits associés dans la boutique ou écrivez-nous sur WhatsApp pour un conseil personnalisé.</p>'
+    + '<button class="btn btn-primary" style="margin-top:1.5rem;width:100%" onclick="closeModal();go(\'boutique\')">Voir les produits</button>';
+  openModal(html);
+  bindImgFallback(document.getElementById("modal"));
+}
+
+/* ---------- Contact ---------- */
+function contactSubmit(e){
+  e.preventDefault();
+  const name = document.getElementById("cnName").value.trim();
+  const phone = document.getElementById("cnPhone").value.trim();
+  const subject = document.getElementById("cnSubject").value;
+  const msg = document.getElementById("cnMsg").value.trim();
+
+  const text = "🌸 *MESSAGE — FEDOUE PRODUCT* 🌸\n━━━━━━━━━━━━━━━━━━━━━━\n\n"
+    + "👤 *Nom :* " + name + "\n"
+    + "📞 *Téléphone :* " + phone + "\n"
+    + "📋 *Sujet :* " + subject + "\n\n"
+    + "💬 *Message :*\n" + msg + "\n\n"
+    + "— Envoyé depuis le formulaire de contact du site.";
+  window.open(waLink(cfg.whatsapp1, text), "_blank");
+  toast("Redirection WhatsApp…","ok");
+  e.target.reset();
+}
+
+/* ---------- Modales ---------- */
+function openModal(html){
+  document.getElementById("modal").innerHTML = html;
+  document.getElementById("overlay").classList.add("on");
+  document.body.style.overflow = "hidden";
+}
+function closeModal(){
+  document.getElementById("overlay").classList.remove("on");
+  document.body.style.overflow = "";
+}
+
+/* ---------- Admin : connexion ---------- */
+function openAdminLogin(){
+  const html = '<button class="modal-x" onclick="closeModal()">×</button>'
+    + '<h3>🔒 Espace administrateur</h3>'
+    + '<p style="color:var(--muted);font-size:.9rem;font-weight:300;margin-bottom:1.6rem">Accès réservé à Fedoue Product. Entrez le mot de passe pour gérer vos produits.</p>'
+    + '<form onsubmit="tryAdminLogin(event)">'
+    + '<div class="field"><label>Mot de passe</label><input type="password" id="adminPwd" placeholder="••••••••" autofocus></div>'
+    + '<button class="btn btn-primary" style="width:100%" type="submit">Entrer</button>'
+    + '</form>';
+  openModal(html);
+  setTimeout(function(){ const i = document.getElementById("adminPwd"); if(i) i.focus(); }, 80);
+}
+function tryAdminLogin(e){
+  e.preventDefault();
+  const pwd = document.getElementById("adminPwd").value;
+  if(pwd === cfg.adminPass){
+    isAdmin = true;
+    closeModal();
+    openAdmin();
+  } else {
+    toast("Mot de passe incorrect","err");
+  }
+}
+function openAdmin(){
+  document.getElementById("adminPanel").classList.add("on");
+  document.body.style.overflow = "hidden";
+  adminTab("dashboard", document.querySelector(".admin-tab"));
+}
+function closeAdmin(){
+  document.getElementById("adminPanel").classList.remove("on");
+  document.body.style.overflow = "";
+  isAdmin = false;
+}
+function adminTab(tab, btn){
+  document.querySelectorAll(".admin-tab").forEach(b => { if(!b.classList.contains("danger")) b.classList.remove("on"); });
+  if(btn && !btn.classList.contains("danger")) btn.classList.add("on");
+  ["dashboard","produits","nouveau","config","securite"].forEach(function(t){
+    const el = document.getElementById("admin" + t.charAt(0).toUpperCase() + t.slice(1));
+    if(el) el.style.display = (t === tab ? "block" : "none");
+  });
+  if(tab === "dashboard") renderAdminDashboard();
+  if(tab === "produits") renderAdminProduits();
+  if(tab === "nouveau") renderAdminForm(null);
+  if(tab === "config") renderAdminConfig();
+  if(tab === "securite") renderAdminSecurite();
+}
+
+/* ---------- Admin : dashboard ---------- */
+function renderAdminDashboard(){
+  const totalStock = products.reduce((s,p) => s + (p.stock||0), 0);
+  const totalValue = products.reduce((s,p) => s + (p.stock||0) * (p.price||0), 0);
+  const lowStock = products.filter(p => p.stock > 0 && p.stock <= 5).length;
+  const outStock = products.filter(p => p.stock === 0).length;
+  const el = document.getElementById("adminDashboard");
+  el.innerHTML = '<div class="admin-card">'
+    + '<h3>📊 Tableau de bord</h3>'
+    + '<div class="stats-grid">'
+    + '<div class="stat-card"><div class="s-label">Produits</div><div class="s-value">' + products.length + '</div><div class="s-sub">références actives</div></div>'
+    + '<div class="stat-card"><div class="s-label">Stock total</div><div class="s-value">' + totalStock + '</div><div class="s-sub">unités disponibles</div></div>'
+    + '<div class="stat-card"><div class="s-label">Valeur stock</div><div class="s-value">' + (totalValue/1000).toFixed(1) + 'k</div><div class="s-sub">HTG</div></div>'
+    + '<div class="stat-card"><div class="s-label">Alertes</div><div class="s-value">' + (lowStock + outStock) + '</div><div class="s-sub">' + lowStock + ' faible · ' + outStock + ' épuisé</div></div>'
+    + '</div>'
+    + '<div style="margin-top:1.5rem;display:flex;gap:.6rem;flex-wrap:wrap">'
+    + '<button class="btn btn-primary btn-sm" onclick="adminTab(\'nouveau\',null)">+ Ajouter un produit</button>'
+    + '<button class="btn btn-outline btn-sm" onclick="adminTab(\'produits\',null)">Gérer les produits</button>'
+    + '<button class="btn btn-outline btn-sm" onclick="adminTab(\'config\',null)">Configuration</button>'
+    + '</div>'
+    + '</div>'
+    + '<div class="admin-card">'
+    + '<h3>⚠ Produits à réapprovisionner</h3>'
+    + (products.filter(p => p.stock <= 5).length === 0
+      ? '<p style="color:var(--muted);font-weight:300">Tous vos stocks sont suffisants ✓</p>'
+      : products.filter(p => p.stock <= 5).map(p =>
+        '<div class="prod-row">'
+        + '<div>' + imgHTML(p.img, p.name) + '</div>'
+        + '<div><h5>' + esc(p.name) + '</h5><div class="meta">Stock actuel : <strong style="color:' + (p.stock===0?"var(--red)":"var(--terracotta)") + '">' + p.stock + '</strong></div></div>'
+        + '<div class="row-actions"><button class="mini" onclick="editProduct(\'' + p.id + '\')">Réapprovisionner</button></div>'
+        + '</div>'
+      ).join(""))
+    + '</div>';
+  bindImgFallback(el);
+}
+
+/* ---------- Admin : liste produits ---------- */
+function renderAdminProduits(){
+  const el = document.getElementById("adminProduits");
+  el.innerHTML = '<div class="admin-card">'
+    + '<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem">'
+    + '<h3 style="margin:0">📦 Produits (' + products.length + ')</h3>'
+    + '<div style="display:flex;gap:.5rem;flex-wrap:wrap">'
+    + '<button class="btn btn-primary btn-sm" onclick="adminTab(\'nouveau\', null)">+ Nouveau produit</button>'
+    + '<button class="mini" onclick="exportData()">⬇ Exporter</button>'
+    + '<button class="mini" onclick="importData()">⬆ Importer</button>'
+    + '<button class="mini danger" onclick="resetAll()">↺ Réinitialiser</button>'
+    + '</div></div>'
+    + products.map(p =>
+      '<div class="prod-row">'
+      + '<div>' + imgHTML(p.img, p.name) + '</div>'
+      + '<div><h5>' + esc(p.name) + '</h5>'
+      + '<div class="meta">' + esc(p.cat) + ' · ' + money(p.price) + ' · Stock ' + p.stock + (p.badge ? ' · <span style="color:var(--terracotta)">' + esc(p.badge) + '</span>' : '') + '</div>'
+      + '</div>'
+      + '<div class="row-actions">'
+      + '<button class="mini" onclick="editProduct(\'' + p.id + '\')">✎ Modifier</button>'
+      + '<button class="mini danger" onclick="deleteProduct(\'' + p.id + '\')">🗑</button>'
+      + '</div></div>'
+    ).join("")
+    + '</div>';
+  bindImgFallback(el);
+}
+
+/* ---------- Admin : formulaire produit ---------- */
+function renderAdminForm(id){
+  editingId = id;
+  const p = id ? products.find(x => x.id === id) : null;
+  const isEdit = !!p;
+  const d = p || {id:"", name:"", cat:"Soins visage", price:"", old:"", img:"", badge:"", rating:5, stock:10, desc:"", ing:"", use:"", skins:[], needs:[], pop:80};
+
+  const cats = ["Soins visage","Maquillage végan","Huiles capillaires","Soins corps","Coffrets","Autre"];
+  const badges = ["","Best-seller","Nouveau","Promo","Coffret","Exclusif"];
+  const skinList = ["Normale","Sèche","Grasse","Mixte","Sensible","Tous"];
+  const needList = ["Hydratation","Anti-âge","Éclat","Anti-acné","Réparation","Protection","Croissance"];
+
+  const html = '<div class="admin-card">'
+    + '<h3>' + (isEdit ? "✎ Modifier le produit" : "+ Nouveau produit") + '</h3>'
+    + '<form onsubmit="saveProduct(event)">'
+    + '<input type="hidden" id="aId" value="' + esc(d.id) + '">'
+    + '<div class="field-row">'
+    + '<div class="field"><label>Nom du produit *</label><input required id="aName" value="' + esc(d.name) + '" placeholder="Ex : Sérum Éclat"></div>'
+    + '<div class="field"><label>Catégorie *</label><select id="aCat">'
+    + cats.map(c => '<option' + (d.cat===c?" selected":"") + '>' + c + '</option>').join("")
+    + '</select></div></div>'
+    + '<div class="field-row">'
+    + '<div class="field"><label>Prix (HTG) *</label><input required type="number" min="0" id="aPrice" value="' + esc(d.price) + '" placeholder="2500"></div>'
+    + '<div class="field"><label>Ancien prix (optionnel)</label><input type="number" min="0" id="aOld" value="' + esc(d.old || "") + '" placeholder="3200"></div></div>'
+    + '<div class="field-row">'
+    + '<div class="field"><label>Stock *</label><input required type="number" min="0" id="aStock" value="' + esc(d.stock) + '"></div>'
+    + '<div class="field"><label>Badge</label><select id="aBadge">'
+    + badges.map(b => '<option' + (d.badge===b?" selected":"") + '>' + (b||"— Aucun —") + '</option>').join("")
+    + '</select></div></div>'
+    + '<div class="field"><label>Image du produit</label>'
+    + '<div class="img-preview" id="aPreview">' + (d.img ? '<img src="' + esc(d.img) + '" onerror="this.src=\'' + placeholderFor(d.name||"Produit") + '\'">' : '<div class="ph">Aucune image</div>') + '</div>'
+    + '<input id="aImg" value="' + esc(d.img) + '" placeholder="Collez une URL d\'image, ou téléversez ci-dessous" oninput="updatePreview()">'
+    + '<div style="display:flex;gap:.6rem;margin-top:.6rem;flex-wrap:wrap">'
+    + '<label class="mini" style="cursor:pointer">📷 Téléverser une image<input type="file" accept="image/*" onchange="uploadImg(event)" style="display:none"></label>'
+    + '<button type="button" class="mini" onclick="document.getElementById(\'aImg\').value=\'\';updatePreview()">Effacer</button>'
+    + '</div>'
+    + '<div class="help">Collez une URL ou téléversez une image depuis votre téléphone/ordinateur (compressée automatiquement).</div>'
+    + '</div>'
+    + '<div class="field"><label>Description courte *</label><textarea required id="aDesc" placeholder="Une phrase qui résume le produit...">' + esc(d.desc) + '</textarea></div>'
+    + '<div class="field"><label>Ingrédients</label><textarea id="aIng" placeholder="Liste des ingrédients...">' + esc(d.ing) + '</textarea></div>'
+    + '<div class="field"><label>Conseils d\'utilisation</label><textarea id="aUse" placeholder="Comment utiliser le produit...">' + esc(d.use) + '</textarea></div>'
+    + '<div class="field"><label>Types de peau</label><div style="display:flex;gap:.5rem;flex-wrap:wrap">'
+    + skinList.map(s => '<label class="chip" style="cursor:pointer;display:flex;align-items:center;gap:.4rem"><input type="checkbox" value="' + s + '" class="aSkin"' + ((d.skins||[]).indexOf(s) > -1 ? " checked" : "") + '> ' + s + '</label>').join("")
+    + '</div></div>'
+    + '<div class="field"><label>Besoins</label><div style="display:flex;gap:.5rem;flex-wrap:wrap">'
+    + needList.map(s => '<label class="chip" style="cursor:pointer;display:flex;align-items:center;gap:.4rem"><input type="checkbox" value="' + s + '" class="aNeed"' + ((d.needs||[]).indexOf(s) > -1 ? " checked" : "") + '> ' + s + '</label>').join("")
+    + '</div></div>'
+    + '<div class="field-row">'
+    + '<div class="field"><label>Note (1-5)</label><input type="number" min="1" max="5" id="aRating" value="' + esc(d.rating) + '"></div>'
+    + '<div class="field"><label>Popularité (0-100)</label><input type="number" min="0" max="100" id="aPop" value="' + esc(d.pop) + '"></div></div>'
+    + '<div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.5rem">'
+    + '<button class="btn btn-primary" type="submit">' + (isEdit ? "💾 Enregistrer les modifications" : "➕ Créer le produit") + '</button>'
+    + (isEdit ? '<button type="button" class="btn btn-outline" onclick="cancelEdit()">Annuler</button>' : '')
+    + '</div>'
+    + '</form></div>';
+  document.getElementById("adminNouveau").innerHTML = html;
+}
+function cancelEdit(){ editingId = null; renderAdminForm(null); }
+function editProduct(id){
+  adminTab("nouveau", null);
+  document.querySelectorAll(".admin-tab").forEach((b,i) => { if(i===2) b.classList.add("on"); else if(!b.classList.contains("danger")) b.classList.remove("on"); });
+  renderAdminForm(id);
+}
+function updatePreview(){
+  const url = document.getElementById("aImg").value.trim();
+  const prev = document.getElementById("aPreview");
+  const name = document.getElementById("aName").value || "Produit";
+  prev.innerHTML = url
+    ? '<img src="' + esc(url) + '" onerror="this.src=\'' + placeholderFor(name) + '\'">'
+    : '<div class="ph">Aucune image</div>';
+}
+function uploadImg(e){
+  const file = e.target.files[0]; if(!file) return;
+  const reader = new FileReader();
+  reader.onload = function(ev){
+    const img = new Image();
+    img.onload = function(){
+      const max = 900;
+      let w = img.width, h = img.height;
+      if(w > max || h > max){
+        if(w > h){ h = Math.round(h * max / w); w = max; }
+        else { w = Math.round(w * max / h); h = max; }
+      }
+      const c = document.createElement("canvas");
+      c.width = w; c.height = h;
+      c.getContext("2d").drawImage(img, 0, 0, w, h);
+      const dataUrl = c.toDataURL("image/jpeg", 0.78);
+      document.getElementById("aImg").value = dataUrl;
+      updatePreview();
+      toast("Image chargée et compressée ✓","ok");
+    };
+    img.src = ev.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+function saveProduct(e){
+  e.preventDefault();
+  const id = document.getElementById("aId").value;
+  const data = {
+    name: document.getElementById("aName").value.trim(),
+    cat: document.getElementById("aCat").value,
+    price: parseInt(document.getElementById("aPrice").value) || 0,
+    old: parseInt(document.getElementById("aOld").value) || 0,
+    stock: parseInt(document.getElementById("aStock").value) || 0,
+    badge: document.getElementById("aBadge").value === "— Aucun —" ? "" : document.getElementById("aBadge").value,
+    img: document.getElementById("aImg").value.trim(),
+    desc: document.getElementById("aDesc").value.trim(),
+    ing: document.getElementById("aIng").value.trim(),
+    use: document.getElementById("aUse").value.trim(),
+    skins: Array.from(document.querySelectorAll(".aSkin:checked")).map(c => c.value),
+    needs: Array.from(document.querySelectorAll(".aNeed:checked")).map(c => c.value),
+    rating: parseInt(document.getElementById("aRating").value) || 5,
+    pop: parseInt(document.getElementById("aPop").value) || 80
+  };
+
+  if(id){
+    const i = products.findIndex(p => p.id === id);
+    if(i > -1){
+      products[i] = Object.assign({}, products[i], data);
+      toast("Produit modifié ✓","ok");
+    }
+  } else {
+    data.id = "p" + Date.now();
+    products.unshift(data);
+    toast("Produit créé ✓","ok");
+  }
+  LS.set("products", products);
+  editingId = null;
+  refreshAll();
+  adminTab("produits", null);
+  document.querySelectorAll(".admin-tab").forEach((b,i) => { if(i===1) b.classList.add("on"); else if(!b.classList.contains("danger")) b.classList.remove("on"); });
+}
+function deleteProduct(id){
+  const p = products.find(x => x.id === id);
+  if(!p) return;
+  if(!confirm("Supprimer définitivement « " + p.name + " » ?")) return;
+  products = products.filter(x => x.id !== id);
+  LS.set("products", products);
+  cart = cart.filter(c => c.id !== id);
+  wishlist = wishlist.filter(w => w !== id);
+  LS.set("wishlist", wishlist);
+  saveCart(); updateCartCount(); updateWishCount();
+  refreshAll();
+  renderAdminProduits();
+  renderAdminDashboard();
+  toast("Produit supprimé","ok");
+}
+
+/* ---------- Admin : configuration ---------- */
+function renderAdminConfig(){
+  const el = document.getElementById("adminConfig");
+  el.innerHTML = '<div class="admin-card">'
+    + '<h3>⚙ Configuration de la boutique</h3>'
+    + '<p style="color:var(--muted);font-size:.9rem;margin-bottom:1.5rem;font-weight:300">Ces informations sont utilisées partout sur le site (contact, WhatsApp, footer, paiement).</p>'
+    + '<form onsubmit="saveConfig(event)">'
+    + '<div class="field-row">'
+    + '<div class="field"><label>Nom de la marque</label><input id="cBrand" value="' + esc(cfg.brand) + '"></div>'
+    + '<div class="field"><label>Adresse</label><input id="cAddr" value="' + esc(cfg.address) + '"></div>'
+    + '</div>'
+    + '<div class="field-row">'
+    + '<div class="field"><label>WhatsApp principal (chiffres seuls)</label><input id="cWa1" value="' + esc(cfg.whatsapp1) + '" placeholder="50940751710"></div>'
+    + '<div class="field"><label>WhatsApp secondaire</label><input id="cWa2" value="' + esc(cfg.whatsapp2) + '" placeholder="50942032845"></div>'
+    + '</div>'
+    + '<div class="field-row">'
+    + '<div class="field"><label>Numéro Natcash</label><input id="cNat" value="' + esc(cfg.natcash) + '" placeholder="41620074"></div>'
+    + '<div class="field"><label>Email</label><input type="email" id="cMail" value="' + esc(cfg.email) + '"></div>'
+    + '</div>'
+    + '<button class="btn btn-primary" type="submit">💾 Enregistrer la configuration</button>'
+    + '</form></div>';
+}
+function saveConfig(e){
+  e.preventDefault();
+  cfg.brand = document.getElementById("cBrand").value.trim() || "Fedoue Product";
+  cfg.address = document.getElementById("cAddr").value.trim();
+  cfg.whatsapp1 = document.getElementById("cWa1").value.replace(/[^0-9]/g,"");
+  cfg.whatsapp2 = document.getElementById("cWa2").value.replace(/[^0-9]/g,"");
+  cfg.natcash = document.getElementById("cNat").value.trim();
+  cfg.email = document.getElementById("cMail").value.trim();
+  LS.set("config", cfg);
+  applyConfigToDOM();
+  toast("Configuration enregistrée ✓","ok");
+}
+
+/* ---------- Admin : sécurité ---------- */
+function renderAdminSecurite(){
+  const el = document.getElementById("adminSecurite");
+  el.innerHTML = '<div class="admin-card">'
+    + '<h3>🔒 Changer le mot de passe administrateur</h3>'
+    + '<p style="color:var(--muted);font-size:.9rem;margin-bottom:1.5rem;font-weight:300">Seul vous pouvez accéder à cet espace. Changez régulièrement votre mot de passe.</p>'
+    + '<form onsubmit="changePwd(event)">'
+    + '<div class="field"><label>Mot de passe actuel</label><input type="password" required id="pOld"></div>'
+    + '<div class="field-row">'
+    + '<div class="field"><label>Nouveau mot de passe</label><input type="password" required id="pNew" minlength="4"></div>'
+    + '<div class="field"><label>Confirmer</label><input type="password" required id="pNew2" minlength="4"></div>'
+    + '</div>'
+    + '<button class="btn btn-primary" type="submit">Changer le mot de passe</button>'
+    + '</form></div>'
+    + '<div class="admin-card">'
+    + '<h3>💾 Sauvegarde des données</h3>'
+    + '<p style="color:var(--muted);font-size:.9rem;margin-bottom:1.3rem;font-weight:300">Exportez vos produits, configuration et FAQ dans un fichier pour les sauvegarder ou les transférer.</p>'
+    + '<div style="display:flex;gap:.7rem;flex-wrap:wrap">'
+    + '<button class="btn btn-outline btn-sm" onclick="exportData()">⬇ Exporter les données</button>'
+    + '<button class="btn btn-outline btn-sm" onclick="importData()">⬆ Importer un fichier</button>'
+    + '<button class="btn btn-outline btn-sm" style="border-color:var(--red);color:var(--red)" onclick="resetAll()">↺ Tout réinitialiser</button>'
+    + '</div></div>';
+}
+function changePwd(e){
+  e.preventDefault();
+  const o = document.getElementById("pOld").value;
+  const n = document.getElementById("pNew").value;
+  const n2 = document.getElementById("pNew2").value;
+  if(o !== cfg.adminPass){ toast("Mot de passe actuel incorrect","err"); return; }
+  if(n !== n2){ toast("Les nouveaux mots de passe ne correspondent pas","err"); return; }
+  cfg.adminPass = n;
+  LS.set("config", cfg);
+  toast("Mot de passe modifié ✓","ok");
+  e.target.reset();
+}
+function exportData(){
+  const data = {config: cfg, products: products, faq: faq, posts: posts, exportedAt: new Date().toISOString()};
+  const blob = new Blob([JSON.stringify(data, null, 2)], {type:"application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "fedoue-backup-" + new Date().toISOString().slice(0,10) + ".json";
+  a.click();
+  URL.revokeObjectURL(url);
+  toast("Sauvegarde téléchargée ✓","ok");
+}
+function importData(){
+  const inp = document.createElement("input");
+  inp.type = "file"; inp.accept = "application/json";
+  inp.onchange = function(e){
+    const f = e.target.files[0]; if(!f) return;
+    const r = new FileReader();
+    r.onload = function(ev){
+      try{
+        const d = JSON.parse(ev.target.result);
+        if(d.products) { products = d.products; LS.set("products", products); }
+        if(d.config) { cfg = Object.assign({}, DEFAULT_CONFIG, d.config); LS.set("config", cfg); }
+        if(d.faq) { faq = d.faq; LS.set("faq", faq); }
+        if(d.posts) { posts = d.posts; LS.set("posts", posts); }
+        refreshAll();
+        applyConfigToDOM();
+        renderAdminProduits();
+        renderAdminDashboard();
+        toast("Données importées ✓","ok");
+      }catch(err){ toast("Fichier invalide","err"); }
+    };
+    r.readAsText(f);
+  };
+  inp.click();
+}
+function resetAll(){
+  if(!confirm("⚠️ Cela effacera tous vos produits, votre configuration et vos commandes. Continuer ?")) return;
+  if(!confirm("Confirmez-vous vraiment la réinitialisation totale ?")) return;
+  LS.del("products"); LS.del("config"); LS.del("cart"); LS.del("faq"); LS.del("posts"); LS.del("wishlist");
+  location.reload();
+}
+
+/* ---------- Refresh global ---------- */
+function refreshAll(){
+  renderHomeCats();
+  renderHomeGrid();
+  renderChips();
+  renderShop();
+  renderCart();
+  updateCartCount();
+  updateWishCount();
+}
+
+/* ---------- Démarrage ---------- */
+document.addEventListener("DOMContentLoaded", init);
+</script>
+</body>
+</html>
